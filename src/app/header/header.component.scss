@@ -24,6 +24,9 @@ h1{
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
+  background-color: #94939D;
+  height: 2rem;
+  align-items: center;
 }
 
 
@@ -31,8 +34,8 @@ h1{
 a {
   text-decoration: none;
   font-size: 120%;
-  font-weight: bold;
-  color: #8c2798;
+  // font-weight: bold;
+  color: white;
   cursor: pointer;
 }
 
@@ -46,9 +49,9 @@ a:hover{
   a {
     font-size: 80%;
   }
-  a:hover{
-    background-color: grey;
-  }
+  // a:hover{
+  //   background-color: grey;
+  // }
 
 }
 
