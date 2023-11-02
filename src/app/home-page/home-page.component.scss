@@ -1,22 +1,32 @@
-.img{
-  height: 30vh;
-}
+// .img{
+//   height: 30vh;
+// }
 
-.img{
-  display:flex;
-  justify-content: center;
-  margin-top: 7rem;
-  margin-bottom: 5vh;
-}
+// .img{
+//   display:flex;
+//   justify-content: center;
+//   margin-top: 7rem;
+//   margin-bottom: 5vh;
+//   border-radius: 50%;
+//   overflow: hidden;
+
+// }
+// .img img {
+//   width: 50%;
+//   height: 50%;
+//   object-fit: cover;
+// }
+
 h1{
   display: flex;
   justify-content: center;
 }
-
+h2{
+  font-size: larger;
+}
 .lien-container {
   text-decoration: none;
   color: #000;
-
 }
 
 .container {
@@ -26,6 +36,7 @@ h1{
   max-width: 80vh;
   margin: 0 auto;
   border: 1px solid #ccc;
+  margin-bottom: 2vh;
 }
 
 .texte {
