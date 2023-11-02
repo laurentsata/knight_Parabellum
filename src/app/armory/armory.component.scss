@@ -3,6 +3,29 @@
   justify-content: space-around;
 }
 
+@media screen and (max-width:428px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .img, .img2{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+}
+
+@media screen and (max-width:375px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img, .img2{
+    display: flex;
+    justify-content: center;
+  }
+}
 // .img{
 //   height: 5vh;
 // }

@@ -2,14 +2,18 @@
   height: 30vh;
 }
 
-.img, h1{
+.img{
   display:flex;
   justify-content: center;
   margin-top: 7rem;
 }
+h1{
+  display: flex;
+  justify-content: center;
+}
 
 @media screen and (max-width: 428px){
-  .img, h1{
+  .img{
     display:flex;
     justify-content: center;
     margin-top: 4rem;
@@ -18,7 +22,7 @@
 }
 
 @media screen and (max-width: 375px){
-  .img, h1{
+  .img{
     display:flex;
     justify-content: center;
     margin-top: 2rem;
