@@ -6,10 +6,45 @@
   display:flex;
   justify-content: center;
   margin-top: 7rem;
+  margin-bottom: 5vh;
 }
 h1{
   display: flex;
   justify-content: center;
+}
+
+.lien-container {
+  text-decoration: none;
+  color: #000;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vh;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.texte {
+  flex: 1;
+  padding: 10px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+@media screen and (max-width: 619px){
+  .image{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 428px){
@@ -18,6 +53,8 @@ h1{
     justify-content: center;
     margin-top: 4rem;
   }
+
+
 
 }
 
