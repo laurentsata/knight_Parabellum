@@ -21,6 +21,7 @@
     cursor: pointer;
     z-index: 1;
     position: relative;
+    margin-left: 1vh;
   }
 
   .bar {
@@ -81,5 +82,7 @@
 
       .close-icon {
         font-size: 24px;
+        font-weight: bold;
+        color: #fff;
       }
 }
