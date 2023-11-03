@@ -1,0 +1,62 @@
+h1{
+  display: flex;
+  justify-content: center;
+}
+h2{
+  font-size: larger;
+}
+.lien-container {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vh;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  margin-bottom: 2vh;
+}
+
+.texte {
+  flex: 1;
+  padding: 10px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 619px){
+  .image{
+    display: none;
+  }
+  .hidden {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 428px){
+  .img{
+    display:flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+ }
+
+@media screen and (max-width: 375px){
+  .img{
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
