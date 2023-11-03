@@ -7,14 +7,8 @@
 
   li, a, .close-button, .close-icon {
     display: none;
-
   }
-
-  // a {
-  //   display: none;
-  //   text-decoration: none;
-  //    }
-}
+  }
 
 @media screen and (max-width: 428px) {
   .burger {
@@ -35,10 +29,9 @@
   .menu {
     position: absolute;
     z-index: 2;
-    top: 9vh;
+    top: 15vh;
     left: 0;
     width: 200px;
-    // background-color: #fff;
     background-color: #94939D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
