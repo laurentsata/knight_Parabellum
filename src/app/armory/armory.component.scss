@@ -20,9 +20,6 @@
     display: flex;
     justify-content: space-between;
   }
-  img {
-    width: 10vh;
-  }
 }
 @media screen and (max-width: 699px) {
   .container,
@@ -40,9 +37,6 @@
   }
   .cible {
     display: none;
-  }
-  img {
-    width: 15vh;
   }
 }
 

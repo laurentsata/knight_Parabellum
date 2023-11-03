@@ -5,10 +5,13 @@
     margin: 0;
   }
 
-  li, a, .close-button, .close-icon {
+  li,
+  a,
+  .close-button,
+  .close-icon {
     display: none;
   }
-  }
+}
 
 @media screen and (max-width: 428px) {
   .burger {
@@ -32,7 +35,7 @@
     top: 15vh;
     left: 0;
     width: 200px;
-    background-color: #94939D;
+    background-color: #94939d;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     max-height: 0;
@@ -59,23 +62,23 @@
   a {
     text-decoration: none;
     color: #fff;
-      }
-      a:hover{
-        color: red;
-      }
+  }
+  a:hover {
+    color: red;
+  }
 
-      .close-button {
-        display: flex;
-        justify-content: flex-end;
-        padding: 10px;
-        cursor: pointer;
-        position: absolute;
-        z-index: 3;
-      }
+  .close-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+  }
 
-      .close-icon {
-        font-size: 24px;
-        font-weight: bold;
-        color: #fff;
-      }
+  .close-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
 }

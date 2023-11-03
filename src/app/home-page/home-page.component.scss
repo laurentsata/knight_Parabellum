@@ -1,8 +1,8 @@
-h1{
+h1 {
   display: flex;
   justify-content: center;
 }
-h2{
+h2 {
   font-size: larger;
 }
 
@@ -37,27 +37,26 @@ h2{
   display: none;
 }
 
-@media screen and (max-width: 619px){
-  .image{
+@media screen and (max-width: 619px) {
+  .image {
     display: none;
   }
   .hidden {
     display: flex;
   }
-  
 }
 
-@media screen and (max-width: 428px){
-  .img{
-    display:flex;
+@media screen and (max-width: 428px) {
+  .img {
+    display: flex;
     justify-content: center;
     margin-top: 4rem;
   }
- }
+}
 
-@media screen and (max-width: 375px){
-  .img{
-    display:flex;
+@media screen and (max-width: 375px) {
+  .img {
+    display: flex;
     justify-content: center;
     margin-top: 2rem;
   }
