@@ -5,6 +5,7 @@ h1{
 h2{
   font-size: larger;
 }
+
 .lien-container {
   text-decoration: none;
   color: #000;
@@ -16,7 +17,7 @@ h2{
   align-items: center;
   max-width: 80vh;
   margin: 0 auto;
-  border: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   margin-bottom: 2vh;
 }
 
@@ -43,6 +44,7 @@ h2{
   .hidden {
     display: flex;
   }
+  
 }
 
 @media screen and (max-width: 428px){
