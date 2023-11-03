@@ -5,6 +5,9 @@
 </div>
 
 <div class="menu" [ngClass]="{'open': isMenuOpen}">
+  <div class="close-button" (click)="toggleMenu()">
+    <div class="close-icon">X</div>
+  </div>
   <ul>
     <li><a routerLink="/">Accueil</a></li>
     <li><a routerLink="/armory">Armureries</a></li>
