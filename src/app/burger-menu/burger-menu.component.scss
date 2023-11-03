@@ -5,15 +5,15 @@
     margin: 0;
   }
 
-  li {
+  li, a, .close-button, .close-icon {
     display: none;
-    padding: 10px;
+    
   }
 
-  a {
-    display: none;
-    text-decoration: none;
-     }
+  // a {
+  //   display: none;
+  //   text-decoration: none;
+  //    }
 }
 
 @media screen and (max-width: 428px) {
