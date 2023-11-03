@@ -13,8 +13,7 @@
   a {
     display: none;
     text-decoration: none;
-    color: #333;
-  }
+     }
 }
 
 @media screen and (max-width: 428px) {
@@ -35,10 +34,11 @@
   .menu {
     position: absolute;
     z-index: 2;
-    top: 1vh;
+    top: 9vh;
     left: 0;
     width: 200px;
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: #94939D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     max-height: 0;
@@ -58,10 +58,15 @@
   li {
     display: flex;
     padding: 10px;
+    justify-content: space-around;
+    align-items: center;
   }
 
   a {
     text-decoration: none;
-    color: #333;
-  }
+    color: #fff;
+      }
+      a:hover{
+        color: red;
+      }
 }
