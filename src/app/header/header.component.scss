@@ -1,25 +1,19 @@
-.header-container{
+.header-container {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   height: 5rem;
 }
 
-
-
-
-.links-container{
+.links-container {
   width: 100%;
 }
 
-
-
-h1{
+h1 {
   text-align: center;
   color: black;
 }
 
-
-.links{
+.links {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
@@ -28,33 +22,35 @@ h1{
   align-items: center;
 }
 
-
-
 a {
   text-decoration: none;
   font-size: 120%;
-   color: white;
+  color: white;
   cursor: pointer;
 }
 
-
-a:hover{
-  color: red;
+a:hover {
+  color: rgb(0, 174, 255);
   border-top: 10px solid #fff;
 }
 
-@media screen and (max-width: 428px){
+.active-link {
+  color: rgb(0, 174, 255);
+  border-top: 10px solid #fff;
+}
+
+@media screen and (max-width: 428px) {
   a {
     font-size: 80%;
   }
-.header-container{
-  display: none;
+
+  .header-container {
+    display: none;
+  }
 }
 
-}
-
-@media screen and (max-width: 375px){
-  a{
+@media screen and (max-width: 375px) {
+  a {
     font-size: 70%;
   }
 }
