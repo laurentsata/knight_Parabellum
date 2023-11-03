@@ -51,6 +51,7 @@ h2{
   padding: 10px;
 }
 
+
 @media screen and (max-width: 619px){
   .image{
     display: none;
@@ -64,7 +65,9 @@ h2{
     justify-content: center;
     margin-top: 4rem;
   }
-
+  .hidden {
+    display: none;
+  }
 
 
 }

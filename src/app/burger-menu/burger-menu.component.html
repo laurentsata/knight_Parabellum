@@ -1,0 +1,16 @@
+<div class="burger" (click)="toggleMenu()">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+
+<div class="menu" [ngClass]="{'open': isMenuOpen}">
+  <ul>
+    <li><a routerLink="/">Accueil</a></li>
+    <li><a routerLink="/armory">Armureries</a></li>
+    <li><a routerLink="/link">Liens</a></li>
+    <li><a routerLink="/unadopted">Et alors</a></li>
+  </ul>
+</div>
+
+

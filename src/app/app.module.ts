@@ -7,6 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { ArmoryComponent } from './armory/armory.component';
 import { LinkComponent } from './link/link.component';
+import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { LinkComponent } from './link/link.component';
     HomePageComponent,
     ArmoryComponent,
     LinkComponent,
+    BurgerMenuComponent,
 
   ],
   imports: [
