@@ -7,7 +7,7 @@
 
   li, a, .close-button, .close-icon {
     display: none;
-    
+
   }
 
   // a {
@@ -75,6 +75,8 @@
         justify-content: flex-end;
         padding: 10px;
         cursor: pointer;
+        position: absolute;
+        z-index: 3;
       }
 
       .close-icon {
