@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { ArmoryComponent } from './armory/armory.component';
 import { LinkComponent } from './link/link.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
     ArmoryComponent,
     LinkComponent,
     BurgerMenuComponent,
+    BannerComponent,
 
   ],
   imports: [
