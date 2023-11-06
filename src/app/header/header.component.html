@@ -20,6 +20,11 @@
         >Gallerie</a
       >
       <a
+        [routerLink]="['/frame']"
+        [ngClass]="{ 'active-link': isLinkActive('/frame') }"
+        >Bétisier</a
+      >
+      <a
         [routerLink]="['/unadopted']"
         [ngClass]="{ 'active-link': isLinkActive('/unadopted') }"
         >En travaux</a

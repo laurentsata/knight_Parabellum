@@ -5,6 +5,7 @@ import { ArmoryComponent } from './armory/armory.component';
 import { LinkComponent } from './link/link.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FrameComponent } from './frame/frame.component';
 
 const routes: Routes = [{
   path: '' ,
@@ -26,6 +27,11 @@ component: BurgerMenuComponent
 {path: 'gallery' ,
 component: GalleryComponent
 },
+
+{path: 'frame' ,
+component: FrameComponent
+},
+
 ];
 
 

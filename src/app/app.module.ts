@@ -10,6 +10,7 @@ import { LinkComponent } from './link/link.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { BannerComponent } from './banner/banner.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { FrameComponent } from './frame/frame.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     BurgerMenuComponent,
     BannerComponent,
     GalleryComponent,
+    FrameComponent,
 
   ],
   imports: [
