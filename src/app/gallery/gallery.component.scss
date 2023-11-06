@@ -1,0 +1,22 @@
+h2{
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Pour espacer les images horizontalement */
+}
+
+.img img {
+  max-width: 100%; /* Pour s'assurer que les images ne dépassent pas la largeur de l'écran */
+  margin: 10px; /* Espacement entre les images */
+}
+img{
+  width: 35vh;
+}

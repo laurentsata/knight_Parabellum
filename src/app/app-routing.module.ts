@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ArmoryComponent } from './armory/armory.component';
 import { LinkComponent } from './link/link.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const routes: Routes = [{
   path: '' ,
@@ -20,6 +21,10 @@ component: LinkComponent
 
 {path: 'burger' ,
 component: BurgerMenuComponent
+},
+
+{path: 'gallery' ,
+component: GalleryComponent
 },
 ];
 

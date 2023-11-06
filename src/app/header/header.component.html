@@ -15,6 +15,11 @@
         >Liens</a
       >
       <a
+        [routerLink]="['/gallery']"
+        [ngClass]="{ 'active-link': isLinkActive('/gallery') }"
+        >Gallerie</a
+      >
+      <a
         [routerLink]="['/unadopted']"
         [ngClass]="{ 'active-link': isLinkActive('/unadopted') }"
         >En travaux</a
