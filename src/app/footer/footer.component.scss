@@ -1,0 +1,33 @@
+
+.bg, .bg2 {
+
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  bottom: 0; /* Alignez les fonds d'écran en bas de la page */
+  right: 0;
+}
+
+ .bg {
+  //  -webkit-clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+   clip-path: polygon(72% 74%, 100% 57%, 100% 100%, 5% 100%);
+  z-index: -1;
+   // background-color: #e56af0;
+   background-image: url(https://frogmask.eu/blog/wp-content/uploads/2022/12/stand-tir-sportif-900x506.jpg);
+   background-size: 50% 60%;
+ //background-image: url(https://www.fftir.org/wp-content/uploads/2023/09/Une-Web-NS_GUERRERO_CDE23.jpg);
+ //background-image: url(https://img.freepik.com/photos-gratuite/champ-campagne-journee-ensoleillee-campagne_181624-24010.jpg?w=1380&t=st=1699535893~exp=1699536493~hmac=9173b6667b5d44e371b253cd3e3a177b6873aa54926cb4da1c2dcfb60da88d46)
+ }
+
+//.bg2 {
+ // z-index: -2;
+  // background-color: #2c89e7;
+  //-webkit-clip-path: polygon(64% 100%, 100% 27%, 62% 67%, 4% 100%);
+ // clip-path: polygon(64% 100%, 100% 57%, 62% 67%, 4% 100%);
+ //background-image: url(https://images.unsplash.com/photo-1500575351013-6b9af18d7722?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+//}
+@media screen and (max-width: 800px) {
+  .bg {
+    display: none;
+  }
+}

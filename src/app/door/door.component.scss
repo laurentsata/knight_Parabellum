@@ -1,0 +1,26 @@
+/* carousel.component.css */
+
+.carousel-container {
+  width: 100%;
+  max-width: 1000px; /* Ajustez la largeur maximale selon vos besoins */
+  overflow: hidden;
+  margin: 0 auto; /* Centre le carrousel horizontalement */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer; /* Ajout du curseur pour indiquer que l'image est cliquable */
+  }
+}
+

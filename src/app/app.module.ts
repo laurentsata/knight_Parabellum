@@ -11,6 +11,8 @@ import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { BannerComponent } from './banner/banner.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FrameComponent } from './frame/frame.component';
+import { DoorComponent } from './door/door.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { FrameComponent } from './frame/frame.component';
     BannerComponent,
     GalleryComponent,
     FrameComponent,
+    DoorComponent,
+    FooterComponent,
 
   ],
   imports: [

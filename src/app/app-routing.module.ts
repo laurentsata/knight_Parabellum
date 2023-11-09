@@ -6,6 +6,8 @@ import { LinkComponent } from './link/link.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FrameComponent } from './frame/frame.component';
+import { DoorComponent } from './door/door.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [{
   path: '' ,
@@ -32,6 +34,12 @@ component: GalleryComponent
 component: FrameComponent
 },
 
+// {path: 'door' ,
+// component: DoorComponent
+// },
+{path: 'footer' ,
+component: FooterComponent
+},
 ];
 
 
