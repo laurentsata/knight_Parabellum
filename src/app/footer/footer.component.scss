@@ -9,14 +9,13 @@
 }
 
  .bg {
-  //  -webkit-clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+   -webkit-clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
    clip-path: polygon(72% 74%, 100% 57%, 100% 100%, 5% 100%);
   z-index: -1;
-   // background-color: #e56af0;
    background-image: url(https://frogmask.eu/blog/wp-content/uploads/2022/12/stand-tir-sportif-900x506.jpg);
    background-size: 50% 60%;
- //background-image: url(https://www.fftir.org/wp-content/uploads/2023/09/Une-Web-NS_GUERRERO_CDE23.jpg);
- //background-image: url(https://img.freepik.com/photos-gratuite/champ-campagne-journee-ensoleillee-campagne_181624-24010.jpg?w=1380&t=st=1699535893~exp=1699536493~hmac=9173b6667b5d44e371b253cd3e3a177b6873aa54926cb4da1c2dcfb60da88d46)
+   background-repeat: no-repeat;
+   background-size: 100%;
  }
 
 //.bg2 {
