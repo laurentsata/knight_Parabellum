@@ -15,6 +15,11 @@
         >Liens</a
       >
       <a
+        [routerLink]="['/footer']"
+        [ngClass]="{ 'active-link': isLinkActive('/footer') }"
+        >Tuto</a
+      >
+      <a
         [routerLink]="['/gallery']"
         [ngClass]="{ 'active-link': isLinkActive('/gallery') }"
         >Galerie</a
@@ -25,9 +30,8 @@
         >Bétisier</a
       >
       <a
-        [routerLink]="['/door']"
-        [ngClass]="{ 'active-link': isLinkActive('/door') }"
-        >En travaux</a
+        href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5"
+        >Accès privé</a
       >
     </div>
   </div>

@@ -1,7 +1,7 @@
 <div class="burger" (click)="toggleMenu()">
-  <div class="bar"></div>
-  <div class="bar"></div>
-  <div class="bar"></div>
+  <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
+  <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
+  <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
 </div>
 
 <div class="menu" [ngClass]="{ open: isMenuOpen }">
@@ -9,11 +9,23 @@
     <div class="close-icon">X</div>
   </div>
   <ul>
-    <li><a routerLink="/">Accueil</a></li>
-    <li><a routerLink="/armory">Armureries</a></li>
-    <li><a routerLink="/link">Liens</a></li>
-    <li><a routerLink="/gallery">Gallerie</a></li>
-    <li><a routerLink="/frame">Bétisier</a></li>
-    <li><a routerLink="/unadopted">En travaux</a></li>
+    <li><a (click)="closeMenu()" routerLink="/" [@fadeInOut]>Accueil</a></li>
+    <li>
+      <a (click)="closeMenu()" routerLink="/armory" [@fadeInOut]>Armureries</a>
+    </li>
+    <li><a (click)="closeMenu()" routerLink="/link" [@fadeInOut]>Liens</a></li>
+    <li><a (click)="closeMenu()" routerLink="/footer" [@fadeInOut]>Tuto</a></li>
+    <li>
+      <a (click)="closeMenu()" routerLink="/gallery" [@fadeInOut]>Gallerie</a>
+    </li>
+    <li>
+      <a (click)="closeMenu()" routerLink="/frame" [@fadeInOut]>Bétisier</a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5"
+        >Accès privé</a
+      >
+    </li>
   </ul>
 </div>
