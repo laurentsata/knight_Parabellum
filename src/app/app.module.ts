@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,13 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FrameComponent } from './frame/frame.component';
 import { DoorComponent } from './door/door.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -27,11 +35,19 @@ import { FooterComponent } from './footer/footer.component';
     FrameComponent,
     DoorComponent,
     FooterComponent,
+    ContactComponent,
+
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatDialogModule,
+
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
