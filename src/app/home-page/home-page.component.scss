@@ -111,6 +111,11 @@ footer img{
   footer {
     padding-top: 45.55%;
   }
+  .container{
+    border: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+  }
 }
 
 @media screen and (max-width: 799px) {
