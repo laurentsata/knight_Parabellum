@@ -11,17 +11,26 @@
   <input value="Envoyer" type="submit">
 </form> -->
 <h1>Contact</h1>
-<form id="contactform" action="https://formsubmit.io/send/knightparabellum@gmail.com" method="POST">
-  <label for="name">Nom Prénom</label>
-  <input name="name" type="text" id="name">
-  <label for="email">E-mail</label>
-  <input name="email" type="email" id="email">
-  <label for="comment">Message</label>
-  <textarea name="comment" id="comment" rows="3"></textarea>
+<form
+  id="contactform"
+  action="https://formsubmit.io/send/knightparabellum@gmail.com"
+  method="POST"
+>
+  <label for="name" class="required-field">Nom Prénom</label>
+  <input name="name" type="text" id="name" required />
+  <label for="email" class="required-field">E-mail</label>
+  <input name="email" type="email" id="email" required />
+  <label for="comment" class="required-field">Message</label>
+  <textarea name="comment" id="comment" rows="3" required></textarea>
 
-  <input name="_formsubmit_id" type="text" style="display:none">
+  <input name="_formsubmit_id" type="text" style="display: none" />
 
-  <input value="Envoyer" type="submit">
+  <input value="Envoyer" type="submit" id="submitButton" />
+
 </form>
-
-
+<img
+    src="https://png.pngtree.com/png-vector/20190215/ourlarge/pngtree-vector-send-message-icon-png-image_538744.jpg"
+    alt="Message envoyé"
+    id="hiddenImage"
+    style="display: none; width: 30%;"
+  />
