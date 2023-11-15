@@ -1,0 +1,43 @@
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+#contactform, img {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #070e07;
+}
+
+.required-field::before {
+  content: "*";
+  color: red;
+  margin-right: 4px;
+}
