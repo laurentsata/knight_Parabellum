@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Router} from "@angular/router";
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactComponent implements OnInit{
 
-  constructor() { }
+  // constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     document.getElementById("contactform")?.addEventListener("submit", (event: Event) => {
@@ -24,11 +25,16 @@ export class ContactComponent implements OnInit{
       .then(response => response.json())
       .then(data => {
         console.log('Success:', data);
-        // Vous pouvez ajouter ici des actions supplémentaires après l'envoi réussi
+        this.router.navigate(['/frame']).then(() => {
+          console.log('Navigated to the home page successfully');
+
+        });
+
+
       })
       .catch((error) => {
         console.error('Error:', error);
-        // Vous pouvez ajouter ici des actions en cas d'erreur d'envoi
+
       });
     });
   }
