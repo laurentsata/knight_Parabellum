@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,16 +39,17 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatInputModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatDialogModule,
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatInputModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatDialogModule,
 
-    FormsModule
-  ],
+        FormsModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

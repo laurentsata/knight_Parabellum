@@ -1,24 +1,42 @@
 <h1>Contact</h1>
+
 <form
   id="contactform"
   action="https://formsubmit.io/send/knightparabellum@gmail.com"
   method="POST"
+  aria-labelledby="contactFormLabel"
 >
-  <label for="name" class="required-field">Nom Prénom</label>
-  <input name="name" type="text" id="name" required />
-  <label for="email" class="required-field">E-mail</label>
-  <input name="email" type="email" id="email" required />
-  <label for="comment" class="required-field">Message</label>
-  <textarea name="comment" id="comment" rows="3" required></textarea>
+  <fieldset>
+    <legend id="contactFormLabel">Merci de saisir tous les champs</legend>
 
-  <input name="_formsubmit_id" type="text" style="display: none" />
+    <label for="nom" class="required-field">Nom</label>
+    <input name="name" type="text" id="name" required />
 
-  <input value="Envoyer" type="submit" id="submitButton" />
+    <label for="firstname" class="required-field">Prénom</label>
+    <input name="firstname" type="text" id="firstname" required />
 
+    <label for="phone" class="required-field">Téléphone</label>
+    <input name="phone" type="text" id="phone" required />
+
+    <label for="email" class="required-field">E-mail</label>
+    <input name="email" type="email" id="email" required />
+
+    <label for="comment" class="required-field">Message</label>
+    <textarea name="comment" id="comment" rows="3" required></textarea>
+
+    <input name="_formsubmit_id" type="text" style="display: none" />
+
+    <input value="Envoyer" type="submit" id="submitButton" />
+  </fieldset>
 </form>
-<img
+
+<div id="hiddenImageContainer" style="display: none;">
+  <img
     src="https://png.pngtree.com/png-vector/20190215/ourlarge/pngtree-vector-send-message-icon-png-image_538744.jpg"
     alt="Message envoyé"
-    id="hiddenImage"
-    style="display: none; width: 30%;"
   />
+
+  <h2 [@blink]="blinkState">Votre message a été envoyé</h2>
+
+
+</div>

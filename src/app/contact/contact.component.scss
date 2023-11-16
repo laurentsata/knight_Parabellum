@@ -6,7 +6,7 @@ h1{
 #contactform, img {
   max-width: 400px;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -40,4 +40,19 @@ input[type="submit"]:hover {
   content: "*";
   color: red;
   margin-right: 4px;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+h2 {
+  animation: blink 2s infinite; /* durée animation */
+  color: red;
+  font-size: 1.5rem;
 }
