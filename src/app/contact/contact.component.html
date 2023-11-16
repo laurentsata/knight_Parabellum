@@ -2,10 +2,16 @@
 
 <form
   id="contactform"
-  action="https://formsubmit.io/send/knightparabellum@gmail.com"
+  action="https://formsubmit.io/send/480446e2-9b53-48c7-b761-ef636abd7f48"
   method="POST"
   aria-labelledby="contactFormLabel"
 >
+  <!-- <input
+    name="_redirect"
+    type="hidden"
+    id="name"
+    value="https://knight-parabellum.vercel.app/" -->
+  />
   <fieldset>
     <legend id="contactFormLabel">Merci de saisir tous les champs</legend>
 
@@ -30,13 +36,11 @@
   </fieldset>
 </form>
 
-<div id="hiddenImageContainer" style="display: none;">
+<div id="hiddenImageContainer" style="display: none">
   <img
     src="https://png.pngtree.com/png-vector/20190215/ourlarge/pngtree-vector-send-message-icon-png-image_538744.jpg"
     alt="Message envoyé"
   />
 
   <h2 [@blink]="blinkState">Votre message a été envoyé</h2>
-
-
 </div>
