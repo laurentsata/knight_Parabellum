@@ -134,7 +134,6 @@ export class ContactComponent implements OnInit {
   constructor(private formBuilder: FormBuilder, private router: Router) {}
 
   ngOnInit(): void {
-    this.startBlinking();
 
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
@@ -152,7 +151,7 @@ export class ContactComponent implements OnInit {
         formData.append(field, this.contactForm.value[field]);
       }
 
-      fetch('URL_DE_VOTRE_API', {
+      fetch('https://formsubmit.io/send/480446e2-9b53-48c7-b761-ef636abd7f48', {
         method: 'POST',
         body: formData,
       })
@@ -162,34 +161,24 @@ export class ContactComponent implements OnInit {
         })
         .catch((error) => {
           console.error('Error:', error);
+          //meme que success car l'api de retourne riien avec formsbmit.io
+          this.showSuccessMessage();
         });
     } else {
-      alert('Veuillez remplir tous les champs obligatoires.');
+      alert('Veuillez remplir correstement tous les champs obligatoires.');
     }
   }
 
-  // private showSuccessMessage() {
-  //   debounceTime(2000);
-  //   this.router.navigate(['/']).then(() => {
-  //     console.log('Navigated to the home page successfully');
-  //   });
-  // }
 
   private showSuccessMessage() {
-    // Utilisez debounceTime avec un observable
+    // delay avec un observable
     of(null)
-      .pipe(delay(2000))
+      .pipe(delay(500))
       .subscribe(() => {
-        this.router.navigate(['/']).then(() => {
+        this.router.navigate(['/validate']).then(() => {
           console.log('Navigation réussie vers la page d\'accueil');
         });
       });
   }
 
-  // Met en place la logique pour changer l'état de clignotement
-  startBlinking() {
-    setInterval(() => {
-      this.blinkState = this.blinkState === 'on' ? 'off' : 'on';
-    }, 1000); // Change l'état toutes les 1000 millisecondes (1 seconde)
-  }
 }

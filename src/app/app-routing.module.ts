@@ -8,43 +8,33 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FrameComponent } from './frame/frame.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { ValidateComponent } from './validate/validate.component';
 
-const routes: Routes = [{
-  path: '' ,
-  component: HomePageComponent
-},
+const routes: Routes = [
+  {
+    path: '',
+    component: HomePageComponent,
+  },
 
-{path: 'armory' ,
-component: ArmoryComponent
-},
+  { path: 'armory', component: ArmoryComponent },
 
-{path: 'link' ,
-component: LinkComponent
-},
+  { path: 'link', component: LinkComponent },
 
-{path: 'burger' ,
-component: BurgerMenuComponent
-},
+  { path: 'burger', component: BurgerMenuComponent },
 
-{path: 'gallery' ,
-component: GalleryComponent
-},
+  { path: 'gallery', component: GalleryComponent },
 
-{path: 'frame' ,
-component: FrameComponent
-},
+  { path: 'frame', component: FrameComponent },
 
-{path: 'footer' ,
-component: FooterComponent
-},
+  { path: 'footer', component: FooterComponent },
 
-{path: 'contact' ,
-component: ContactComponent}
+  { path: 'contact', component: ContactComponent },
+
+  { path: 'validate', component: ValidateComponent },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
