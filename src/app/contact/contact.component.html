@@ -1,48 +1,11 @@
-<!-- <h1>Contact</h1>
-
-<form
-  id="contactform"
-  action="https://formsubmit.io/send/480446e2-9b53-48c7-b761-ef636abd7f48"
-  method="POST"
-  aria-labelledby="contactFormLabel"
->
-  <fieldset>
-    <legend id="contactFormLabel">Merci de saisir tous les champs</legend>
-
-    <label for="nom" class="required-field">Nom</label>
-    <input name="name" type="text" id="name" required />
-
-    <label for="firstname" class="required-field">Prénom</label>
-    <input name="firstname" type="text" id="firstname" required />
-
-    <label for="phone" class="required-field">Téléphone</label>
-    <input name="phone" type="text" id="phone" required />
-
-    <label for="email" class="required-field">E-mail</label>
-    <input name="email" type="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
-
-    <label for="comment" class="required-field">Message</label>
-    <textarea name="comment" id="comment" rows="3" required></textarea>
-
-    <input name="_formsubmit_id" type="text" style="display: none" />
-
-    <input value="Envoyer" type="submit" id="submitButton" />
-  </fieldset>
-</form>
-
-<div id="hiddenImageContainer" style="display: none">
-  <img
-    src="https://png.pngtree.com/png-vector/20190215/ourlarge/pngtree-vector-send-message-icon-png-image_538744.jpg"
-    alt="Message envoyé"
-  />
-
-  <h2 [@blink]="blinkState">Votre message a été envoyé</h2>
-</div> -->
-
-
 <h1>Contact</h1>
-
+<div *ngIf="loading" id="spinnerContainer">
+  <div class="spinner-container" *ngIf="loading">
+    <div class="spinner"></div>
+  </div>
+</div>
 <form
+*ngIf="!loading"
   id="contactform"
   [formGroup]="contactForm"
   (ngSubmit)="onSubmit()"
@@ -70,6 +33,8 @@
 
     <input value="Envoyer" type="submit" id="submitButton" />
   </fieldset>
+
+
 </form>
 
 <div id="hiddenImageContainer" style="display: none">
