@@ -1,4 +1,4 @@
-<h1>Contact</h1>
+<!-- <h1>Contact</h1>
 
 <form
   id="contactform"
@@ -6,12 +6,6 @@
   method="POST"
   aria-labelledby="contactFormLabel"
 >
-  <!-- <input
-    name="_redirect"
-    type="hidden"
-    id="name"
-    value="https://knight-parabellum.vercel.app/"
-  /> -->
   <fieldset>
     <legend id="contactFormLabel">Merci de saisir tous les champs</legend>
 
@@ -25,10 +19,52 @@
     <input name="phone" type="text" id="phone" required />
 
     <label for="email" class="required-field">E-mail</label>
-    <input name="email" type="email" id="email" required />
+    <input name="email" type="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
 
     <label for="comment" class="required-field">Message</label>
     <textarea name="comment" id="comment" rows="3" required></textarea>
+
+    <input name="_formsubmit_id" type="text" style="display: none" />
+
+    <input value="Envoyer" type="submit" id="submitButton" />
+  </fieldset>
+</form>
+
+<div id="hiddenImageContainer" style="display: none">
+  <img
+    src="https://png.pngtree.com/png-vector/20190215/ourlarge/pngtree-vector-send-message-icon-png-image_538744.jpg"
+    alt="Message envoyé"
+  />
+
+  <h2 [@blink]="blinkState">Votre message a été envoyé</h2>
+</div> -->
+
+
+<h1>Contact</h1>
+
+<form
+  id="contactform"
+  [formGroup]="contactForm"
+  (ngSubmit)="onSubmit()"
+  aria-labelledby="contactFormLabel"
+>
+  <fieldset>
+    <legend id="contactFormLabel">Merci de saisir tous les champs</legend>
+
+    <label for="nom" class="required-field">Nom</label>
+    <input formControlName="name" type="text" id="name" required />
+
+    <label for="firstname" class="required-field">Prénom</label>
+    <input formControlName="firstname" type="text" id="firstname" required />
+
+    <label for="phone" class="required-field">Téléphone</label>
+    <input formControlName="phone" type="text" id="phone" required />
+
+    <label for="email" class="required-field">E-mail</label>
+    <input formControlName="email" type="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
+
+    <label for="comment" class="required-field">Message</label>
+    <textarea formControlName="comment" id="comment" rows="3" required></textarea>
 
     <input name="_formsubmit_id" type="text" style="display: none" />
 
