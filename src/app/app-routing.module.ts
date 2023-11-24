@@ -9,6 +9,7 @@ import { FrameComponent } from './frame/frame.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ValidateComponent } from './validate/validate.component';
+import { ConverterComponent } from './converter/converter.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
 
   { path: 'validate', component: ValidateComponent },
+
+  { path: 'converter', component: ConverterComponent },
 ];
 
 @NgModule({
