@@ -1,6 +1,7 @@
 .container {
   margin: 15vh auto;
   width: 30%;
+  max-width: 28rem;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -39,11 +40,14 @@ p {
   margin-top: 10px;
   cursor: pointer;
 }
-
-
+@media (min-width: 601px) {
+  .container {
+    width: 70%;
+  }
+}
 @media (max-width: 600px) {
   .container {
-    width: 80%;
+    width: 70%;
   }
 
 div{
@@ -57,9 +61,17 @@ div{
   input {
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 1%;
   }
 
   button {
-    margin-top: 5px;
+    margin-top: 2%;
   }
 }
+
+
+// @media (min-width: 601px) {
+//   .container {
+//     width: 70%;
+//   }
+// }
