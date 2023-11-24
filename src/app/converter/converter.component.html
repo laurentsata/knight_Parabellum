@@ -1,0 +1,22 @@
+<div class="container">
+  <div>
+    <label for="grains">Grains:</label>
+    <input type="number" id="grains" [(ngModel)]="grains" />
+    <button class="button"  (click)="convertirEnGrammes()">Convertir en grammes</button>
+  </div>
+
+  <div>
+    <label for="grammes">Grammes:</label>
+    <input type="number" id="grammes" [(ngModel)]="grammes" />
+    <button class="button"  (click)="convertirEnGrains()">Convertir en grains</button>
+  </div>
+
+  <div>
+    <p>Résultat:</p>
+    <p>{{ grains }} grains = {{ grammes }} grammes</p>
+  </div>
+
+  <div>
+    <button class="reset"  (click)="reinitialiser()">Réinitialiser</button>
+  </div>
+</div>

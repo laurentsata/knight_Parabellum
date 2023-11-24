@@ -20,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ValidateComponent } from './validate/validate.component';
+import { ConverterComponent } from './converter/converter.component';
 
 
 
@@ -38,6 +39,7 @@ import { ValidateComponent } from './validate/validate.component';
     FooterComponent,
     ContactComponent,
     ValidateComponent,
+    ConverterComponent,
 
 
   ],
