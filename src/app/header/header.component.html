@@ -26,6 +26,12 @@
       >Convertisseur</a
     >
 
+    <a
+    [routerLink]="['/click']"
+    [ngClass]="{ 'active-link': isLinkActive('/click') }"
+    >Réglages</a
+  >
+
       <a
         [routerLink]="['/gallery']"
         [ngClass]="{ 'active-link': isLinkActive('/gallery') }"
