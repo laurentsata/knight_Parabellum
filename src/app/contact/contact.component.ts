@@ -57,7 +57,7 @@ export class ContactComponent implements OnInit {
           this.showSuccessMessage();
         });
     } else {
-      alert('Veuillez remplir correstement tous les champs obligatoires.');
+      alert('Veuillez remplir correctement tous les champs obligatoires.');
     }
   }
 
