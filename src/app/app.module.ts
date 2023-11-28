@@ -21,6 +21,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ValidateComponent } from './validate/validate.component';
 import { ConverterComponent } from './converter/converter.component';
+import { ClickComponent } from './click/click.component';
 
 
 
@@ -40,6 +41,7 @@ import { ConverterComponent } from './converter/converter.component';
     ContactComponent,
     ValidateComponent,
     ConverterComponent,
+    ClickComponent,
 
 
   ],

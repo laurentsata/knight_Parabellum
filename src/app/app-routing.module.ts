@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ValidateComponent } from './validate/validate.component';
 import { ConverterComponent } from './converter/converter.component';
+import { ClickComponent } from './click/click.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,8 @@ const routes: Routes = [
   { path: 'validate', component: ValidateComponent },
 
   { path: 'converter', component: ConverterComponent },
+
+  { path: 'click', component: ClickComponent },
 ];
 
 @NgModule({
