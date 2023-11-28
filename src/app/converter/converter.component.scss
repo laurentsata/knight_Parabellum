@@ -40,6 +40,9 @@ p {
   margin-top: 10px;
   cursor: pointer;
 }
+.reset:hover {
+  background-color: #e6bf81;
+}
 @media (min-width: 601px) {
   .container {
     width: 70%;

@@ -41,11 +41,13 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-button{
   width: 20rem;
   margin: auto;
  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #9bd69e;
 }
 
 p {
