@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: blue;
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: larger;
+}
+
+.lien-container {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // margin-top: 5vh;
+  background-image: url("https://knightparabellum.000webhostapp.com/img/fondBalle.jpg");
+  // background-size: cover;
+}
+
+
+.frame iframe {
+  max-width: 100%; /* Pour s'assurer que les images ne dépassent pas la largeur de l'écran */
+  margin: 10px; /* Espacement entre les images */
+}
+
+.frame{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+
+iframe{
+  width: 64vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slogan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5vh;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150vh;
+  margin: 0 auto;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 2vh;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 55vh;
+  margin: 0 auto;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 2vh;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.texte {
+  flex: 1;
+  padding: 10px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 619px) {
+
+  .image {
+    display: none;
+  }
+  .hidden {
+    display: flex;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .wrapper{
+    background-image: none;
+
+  }
+  .container{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 428px) {
+  .img {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .img {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+footer {
+  position: static;
+  padding-top: 21.55%;
+  bottom: 0;
+  width: 100%;
+}
+footer img {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  footer {
+    // padding-top: 7.55%;
+    padding-top: 0.55%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    padding-top: 4.55%;
+  }
+}
+
+@media screen and (max-width: 886px) {
+  footer {
+    padding-top: 24.55%;
+  }
+
+  .container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 836px) {
+  footer {
+    padding-top: 35.55%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding-top: 45.55%;
+  }
+  .container {
+    border: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  footer {
+    display: none;
+  }
+}

@@ -11,12 +11,21 @@ import { ContactComponent } from './contact/contact.component';
 import { ValidateComponent } from './validate/validate.component';
 import { ConverterComponent } from './converter/converter.component';
 import { ClickComponent } from './click/click.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   component: HomePageComponent,
+  // },
   {
-    path: '',
-    component: HomePageComponent,
+  path: '',
+    component: AccueilComponent,
   },
+{
+  path: 'news',
+    component: HomePageComponent
+},
 
   { path: 'armory', component: ArmoryComponent },
 
@@ -28,15 +37,17 @@ const routes: Routes = [
 
   { path: 'frame', component: FrameComponent },
 
-  { path: 'footer', component: FooterComponent },
+  { path: 'tuto', component: FooterComponent },
 
   { path: 'contact', component: ContactComponent },
 
   { path: 'validate', component: ValidateComponent },
 
-  { path: 'converter', component: ConverterComponent },
+  { path: 'balistique', component: ConverterComponent },
 
   { path: 'click', component: ClickComponent },
+
+  // { path: 'accueil', component: AccueilComponent },
 ];
 
 @NgModule({
