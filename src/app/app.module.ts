@@ -22,6 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ValidateComponent } from './validate/validate.component';
 import { ConverterComponent } from './converter/converter.component';
 import { ClickComponent } from './click/click.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 
 
@@ -42,6 +43,7 @@ import { ClickComponent } from './click/click.component';
     ValidateComponent,
     ConverterComponent,
     ClickComponent,
+    AccueilComponent,
 
 
   ],
