@@ -23,21 +23,44 @@ h1 {
   align-items: center;
 }
 
+// a {
+//   text-decoration: none;
+//   font-size: 120%;
+//   color: white;
+//   cursor: pointer;
+// }
+
+// a:hover {
+//   color: rgb(177, 219, 238);
+//   border-top: 10px solid #fff;
+// }
+
 a {
-  text-decoration: none;
-  font-size: 120%;
   color: white;
-  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
 }
 
-a:hover {
-  color: rgb(177, 219, 238);
-  border-top: 10px solid #fff;
+a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  transition: width 0.3s;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .active-link {
   color: rgb(177, 219, 238);
-  border-top: 10px solid #fff;
+  // border-top: 11.5px solid #fff;
 }
 
 @media screen and (max-width: 428px) {
