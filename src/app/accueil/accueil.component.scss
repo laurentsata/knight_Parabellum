@@ -165,9 +165,11 @@ footer img {
 
 @media screen and (max-width: 886px) {
   footer {
-    padding-top: 24.55%;
+    display: none;
   }
-
+.image {
+    display: none;
+  }
   .container{
     width: 100%;
   }
