@@ -7,10 +7,22 @@ h2 {
 }
 p{
   text-align: justify;
+
+  width: 55vh;
+
+
 }
 .lien-container {
   text-decoration: none;
   color: #000;
+}
+
+iframe{
+  width: 55vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .container {
@@ -49,6 +61,14 @@ p{
   }
   .hidden {
     display: flex;
+  }
+  iframe{
+    width: 100%;
+    margin: 5px;
+  }
+  p{
+    width: 100%;
+    margin: 5px;
   }
 }
 
