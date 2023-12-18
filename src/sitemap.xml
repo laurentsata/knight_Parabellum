@@ -1,54 +1,39 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Page d'accueil -->
   <url>
     <loc>https://knight-parabellum.vercel.app/</loc>
     <lastmod>2023-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-<!-- Page balistique -->
     <url>
     <loc>https://knight-parabellum.vercel.app/balistique</loc>
     <lastmod>2023-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Page sur les news -->
   <url>
     <loc>https://knight-parabellum.vercel.app/news</loc>
     <lastmod>2023-12-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Page liens -->
   <url>
     <loc>https://knight-parabellum.vercel.app/link</loc>
     <lastmod>2023-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Page tuto -->
     <url>
     <loc>https://knight-parabellum.vercel.app/tuto</loc>
     <lastmod>2023-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-<!-- Page armory -->
     <url>
     <loc>https://knight-parabellum.vercel.app/armory</loc>
     <lastmod>2023-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-
-
-
 </urlset>

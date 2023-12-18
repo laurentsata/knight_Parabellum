@@ -49,6 +49,7 @@ const routes: Routes = [
   { path: 'click', component: ClickComponent },
 
   { path: 'target', component: TargetComponent },
+  
 
   // { path: 'accueil', component: AccueilComponent },
 ];
