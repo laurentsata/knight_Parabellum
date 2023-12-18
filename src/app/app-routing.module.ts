@@ -12,6 +12,7 @@ import { ValidateComponent } from './validate/validate.component';
 import { ConverterComponent } from './converter/converter.component';
 import { ClickComponent } from './click/click.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { TargetComponent } from './target/target.component';
 
 const routes: Routes = [
   // {
@@ -46,6 +47,8 @@ const routes: Routes = [
   { path: 'balistique', component: ConverterComponent },
 
   { path: 'click', component: ClickComponent },
+
+  { path: 'target', component: TargetComponent },
 
   // { path: 'accueil', component: AccueilComponent },
 ];
