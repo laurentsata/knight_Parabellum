@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://knight-parabellum.vercel.app/sitemap.xml
