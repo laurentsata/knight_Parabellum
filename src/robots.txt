@@ -1,3 +1,7 @@
-User-agent: *
-Allow: /
+user-agent: *
+Sitemap: https://knight-parabellum.vercel.app/sitemap.xml
+
+
+user-agent: magicsearchbot
+disallow: /uploads/
 Sitemap: https://knight-parabellum.vercel.app/sitemap.xml
