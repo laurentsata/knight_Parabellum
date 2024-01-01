@@ -24,6 +24,7 @@ import { ConverterComponent } from './converter/converter.component';
 import { ClickComponent } from './click/click.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { TargetComponent } from './target/target.component';
+import { AngleComponent } from './angle/angle.component';
 
 
 
@@ -46,6 +47,7 @@ import { TargetComponent } from './target/target.component';
     ClickComponent,
     AccueilComponent,
     TargetComponent,
+    AngleComponent,
 
 
   ],
