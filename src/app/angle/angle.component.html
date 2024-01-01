@@ -1,0 +1,11 @@
+<div>
+  <label for="mradInput">MRAD:</label>
+  <input type="number" id="mradInput" [(ngModel)]="mradValue" />
+  <button (click)="convertToMOA()">Convertir en MOA</button>
+
+  <label for="moaInput">MOA:</label>
+  <input type="number" id="moaInput" [(ngModel)]="moaValue" />
+  <button (click)="convertToMRAD()">Convertir en MRAD</button>
+  <button (click)="resetValues()" class="reset">Réinitialiser</button>
+</div>
+
