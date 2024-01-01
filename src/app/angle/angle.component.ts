@@ -12,12 +12,12 @@ export class AngleComponent {
 
   convertToMOA() {
     // Conversion de milliradians en minutes d'angle
-    this.moaValue = this.mradValue * 3.4377468;
+    this.moaValue = this.mradValue * 3.4377492368197;
   }
 
   convertToMRAD() {
     // Conversion de minutes d'angle en milliradians
-    this.mradValue = this.moaValue /3.4377468;
+    this.mradValue = this.moaValue /3.4377492368197;
   }
 
   resetValues() {
