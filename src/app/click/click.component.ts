@@ -61,6 +61,9 @@ calculerCorrectionMetrique(): void {
     case '1/8moa':
       this.correction = baseCorrection * 0.364;
       break;
+      case '1/10moa':
+        this.correction = baseCorrection * 0.29;
+        break;
     default:
       this.correction = 0;
   }
