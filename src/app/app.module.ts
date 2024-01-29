@@ -25,6 +25,7 @@ import { ClickComponent } from './click/click.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { TargetComponent } from './target/target.component';
 import { AngleComponent } from './angle/angle.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -48,6 +49,7 @@ import { AngleComponent } from './angle/angle.component';
     AccueilComponent,
     TargetComponent,
     AngleComponent,
+    ModalComponent,
 
 
   ],
