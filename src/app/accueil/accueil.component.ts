@@ -13,12 +13,12 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit(): void {
     // Appel automatique de la fonction pour ouvrir la modal
-    this.openModal('https://knightparabellum.000webhostapp.com/img/Affiche%20Diots%202024.jpg');
+    this.openModal('');
   }
 
   openModal(imageUrl: string): void {
     const dialogRef = this.dialog.open(ModalComponent, {
-      
+
       // data: { imageUrl: imageUrl }
     });
 
