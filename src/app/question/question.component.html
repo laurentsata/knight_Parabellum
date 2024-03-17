@@ -1,4 +1,5 @@
 <div class="container">
+
   <div class="question">
     <h2>{{ question1 }}</h2>
     <div
@@ -23,7 +24,7 @@
       *ngFor="let option of options2; let i = index"
       [ngClass]="{
         correct: option.selectedCorrectly === true,
-        incorrect: !option.selectedCorrectly === false
+        incorrect: option.selectedCorrectly === false
       }"
     >
       <input
