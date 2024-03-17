@@ -137,7 +137,7 @@ export class QuestionComponent {
     '10. Un tireur arrête un instant de tirer, pour se reposer assis en arrière du pas de tir, l‘arme étant chargée, que doit-il faire ?';
   options10: Option[] = [
     { description: 'Mettre son arme en sécurité', isCorrect: true },
-    { description: 'Démonter l’arme', isCorrect: true },
+    { description: 'Démonter l’arme', isCorrect: false},
     {
       description: 'Laisser l’arme chargée sur la table de tir',
       isCorrect: false,
