@@ -1,0 +1,370 @@
+<div class="container">
+  <div class="question">
+    <h2>{{ question1 }}</h2>
+    <div
+      *ngFor="let option of options1; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 1)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question2 }}</h2>
+    <div
+      *ngFor="let option of options2; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: !option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 2)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question3 }}</h2>
+    <div
+      *ngFor="let option of options3; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 3)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question4 }}</h2>
+    <div
+      *ngFor="let option of options4; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 4)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question5 }}</h2>
+    <div
+      *ngFor="let option of options5; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 5)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question6 }}</h2>
+    <div
+      *ngFor="let option of options6; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 6)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question7 }}</h2>
+    <div
+      *ngFor="let option of options7; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 7)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question8 }}</h2>
+    <div
+      *ngFor="let option of options8; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 8)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question9 }}</h2>
+    <div
+      *ngFor="let option of options9; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 9)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question10 }}</h2>
+    <div
+      *ngFor="let option of options10; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 10)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question11 }}</h2>
+    <div
+      *ngFor="let option of options11; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 11)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question12 }}</h2>
+    <div
+      *ngFor="let option of options12; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 12)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question13 }}</h2>
+    <div
+      *ngFor="let option of options13; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 13)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question14 }}</h2>
+    <div
+      *ngFor="let option of options14; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 14)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question15 }}</h2>
+    <div
+      *ngFor="let option of options15; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 15)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question16 }}</h2>
+    <div
+      *ngFor="let option of options16; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 16)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question17 }}</h2>
+    <div
+      *ngFor="let option of options17; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 17)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question18 }}</h2>
+    <div
+      *ngFor="let option of options18; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 18)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question19 }}</h2>
+    <div
+      *ngFor="let option of options19; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 19)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <h2>{{ question20 }}</h2>
+    <div
+      *ngFor="let option of options20; let i = index"
+      [ngClass]="{
+        correct: option.selectedCorrectly === true,
+        incorrect: option.selectedCorrectly === false
+      }"
+    >
+      <input
+        type="checkbox"
+        id="option{{ i }}"
+        (change)="toggleSelection(i, 20)"
+      />
+      <label for="option{{ i }}">{{ option.description }}</label>
+    </div>
+  </div>
+
+<h3>Légende: rouge = réponse fausse, vert bonne réponse (une mauvaise réponse non cochée = vert)</h3>
+<p>Exemple à la question: De quelle couleur est la neige ? si vous cochez blanc, blanc sera en vert, et noire et rouge en vert aussi si vous ne les avez pas cochées</p>
+  <button (click)="submitAll()" class="submit-button">Vérifier</button>
+  <div class="error-message">{{ totalErrorMessage }}</div>
+</div>
+
+<footer>
+    <img src="https://knightparabellum.000webhostapp.com/img/footer5.png" alt="footer" style="width: 100%;">
+   </footer>

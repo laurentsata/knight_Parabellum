@@ -13,6 +13,7 @@ import { ConverterComponent } from './converter/converter.component';
 import { ClickComponent } from './click/click.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { TargetComponent } from './target/target.component';
+import { QuestionComponent } from './question/question.component';
 
 const routes: Routes = [
   // {
@@ -50,6 +51,7 @@ const routes: Routes = [
 
   { path: 'target', component: TargetComponent },
   
+  { path: 'question', component: QuestionComponent },
 
   // { path: 'accueil', component: AccueilComponent },
 ];
