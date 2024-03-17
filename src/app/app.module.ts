@@ -26,6 +26,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { TargetComponent } from './target/target.component';
 import { AngleComponent } from './angle/angle.component';
 import { ModalComponent } from './modal/modal.component';
+import { QuestionComponent } from './question/question.component';
 
 
 
@@ -50,6 +51,7 @@ import { ModalComponent } from './modal/modal.component';
     TargetComponent,
     AngleComponent,
     ModalComponent,
+    QuestionComponent,
 
 
   ],

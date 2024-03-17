@@ -51,10 +51,16 @@
       href="https://tdlb.forumotion.com/"
       >Forum</a
     >
-    <a
+    <!-- <a
     href="https://www.atsmv.com/Quiz_Tir/quiztir.php"
     >QCM</a
-  >
+  > -->
+
+  <a
+  [routerLink]="['/question']"
+  [ngClass]="{ 'active-link': isLinkActive('/qcm') }"
+  >QCM</a
+>
       <!-- <a
         href="https://drive.google.com/drive/folders/1D_Zv4CUtIG7B9ptYMsDsO6ied4BjR0M5"
         >Accès privé</a

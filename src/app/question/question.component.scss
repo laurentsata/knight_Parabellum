@@ -1,0 +1,63 @@
+.correct {
+    color: green; // Couleur du texte pour les options correctes
+  }
+  
+  .incorrect {
+    color: red; // Couleur du texte pour les options incorrectes
+  }
+  
+  .error-message {
+    color: red; // Couleur du texte pour le message d'erreur
+  }
+  
+  .submit-button {
+    background-color: blue; // Couleur de fond du bouton de soumission
+    color: white; // Couleur du texte du bouton de soumission
+    padding: 10px 20px; // Espacement interne du bouton de soumission
+    border: none; // Supprimer la bordure du bouton de soumission
+    border-radius: 5px; // Bordure arrondie du bouton de soumission
+    cursor: pointer; // Curseur pointer pour indiquer qu'il est cliquable
+    margin-top: 20px; /* Espacement par rapport aux questions */
+    align-self: flex-end; /* Aligner le bouton à droite */
+    margin-bottom: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: darkblue; // Couleur de fond du bouton de soumission au survol
+  }
+  
+  
+ 
+  .container {
+    width: 80%; /* Largeur du conteneur */
+    margin: 0 auto; /* Centrer horizontalement */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+    padding-top: 20px;
+  }
+  
+  .question {
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    margin-bottom: 20px; /* Espacement entre chaque question */
+    border-bottom: 1px solid #ccc; /* Bordure en bas de chaque question */
+    padding-bottom: 20px; /* Espace sous chaque question */
+  }
+  
+
+  
+  /* Media Queries pour rendre le contenu responsive */
+  @media screen and (max-width: 860px) {
+    .container {
+      width: 90%; /* Réduire la largeur du conteneur pour les petits écrans */
+    }
+    .question h2 {
+        font-size: .9rem; /* Réduire la taille de la police pour les écrans plus petits */
+      }
+      h3, p{
+        font-size:.9rem; /* Réduire la taille de la police pour les écrans plus petits */
+      }
+    }
+  
+  
+  
