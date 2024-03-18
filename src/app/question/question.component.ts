@@ -283,7 +283,17 @@ export class QuestionComponent {
 
   totalErrorMessage = '';
 
-  toggleSelection(optionIndex: number, questionNumber: number) {
+  // toggleSelection(optionIndex: number, questionNumber: number) {
+  //   const selectedOptions = this.getSelectedOptions(questionNumber);
+  //   if (selectedOptions.has(optionIndex)) {
+  //     selectedOptions.delete(optionIndex);
+  //   } else {
+  //     selectedOptions.add(optionIndex);
+  //   }
+  // }
+
+  toggleSelection(optionIndex: number, questionNumber: number, event: Event) {
+    event.stopPropagation(); // Arrêter la propagation de l'événement
     const selectedOptions = this.getSelectedOptions(questionNumber);
     if (selectedOptions.has(optionIndex)) {
       selectedOptions.delete(optionIndex);
