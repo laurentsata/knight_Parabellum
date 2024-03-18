@@ -19,6 +19,8 @@
     z-index: 1;
     position: relative;
     margin-left: 1vh;
+    width: 25px;
+    height: 4px;
   }
 
   .bar {
@@ -29,7 +31,6 @@
     transition: 0.4s;
   }
 .hidden{
-  // display: none;
   background-color: #fff;
 }
   .menu {
