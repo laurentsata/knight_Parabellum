@@ -22,7 +22,16 @@
     width: 25px;
     height: 4px;
   }
-
+.burgerWhite {
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    margin-left: 1vh;
+    margin-top: 4vh;
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+  }
   .bar {
     width: 25px;
     height: 3px;
@@ -30,12 +39,20 @@
     margin: 5px 0;
     transition: 0.4s;
   }
+  .barWhite {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
 .hidden{
   background-color: #fff;
 }
+
   .menu {
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     top: 15vh;
     left: 0;
     width: 200px;

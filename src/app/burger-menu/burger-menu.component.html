@@ -3,6 +3,11 @@
   <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
   <div class="bar" [ngClass]="{ hidden: isMenuOpen }" [@fadeInOut]></div>
 </div>
+<div class="burgerWhite" (click)="toggleMenu()">
+  <div class="barWhite" [ngClass]="{ hiddenW: isMenuOpen }" [@fadeInOut]></div>
+  <div class="barWhite" [ngClass]="{ hiddenW: isMenuOpen }" [@fadeInOut]></div>
+  <div class="barWhite" [ngClass]="{ hiddenW: isMenuOpen }" [@fadeInOut]></div>
+</div>
 
 <div class="menu" [ngClass]="{ open: isMenuOpen }">
   <div class="close-button" (click)="toggleMenu()">
