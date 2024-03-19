@@ -1,3 +1,14 @@
+:root {
+  --barWhite-color: #fff; /* Définissez la couleur blanche souhaitée ici */
+}
+
+/* Remplacement pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+  .barWhite {
+      background-color: var(--barWhite-color); /* Utilisez la même couleur pour le mode sombre */
+  }
+}
+
 @media screen and (min-width: 429px) {
   ul {
     list-style: none;
@@ -42,7 +53,7 @@
   .barWhite {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--barWhite-color);
     margin: 5px 0;
     transition: 0.4s;
   }
@@ -103,11 +114,5 @@
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .barWhite {
-      background-color: #fff;  /* Définissez la couleur blanche souhaitée pour le mode sombre */
   }
 }
