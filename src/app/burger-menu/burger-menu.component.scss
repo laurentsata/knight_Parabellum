@@ -1,5 +1,5 @@
 :root {
-  --barWhite-color: #fb0606; /* Définissez la couleur blanche souhaitée ici */
+  --barWhite-color: #fff; /* Définissez la couleur blanche souhaitée ici */
 }
 
 /* Remplacement pour le mode sombre */
@@ -52,8 +52,8 @@
   }
   .barWhite {
     width: 25px;
-    height: 3px;
-    background-color: var(--barWhite-color);
+    height: 7px;
+    background-color: #fff;
     margin: 5px 0;
     transition: 0.4s;
   }
