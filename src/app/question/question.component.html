@@ -1,5 +1,4 @@
 <div class="container">
-
   <div class="question">
     <h2>{{ question1 }}</h2>
     <div
@@ -9,11 +8,14 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-      <input type="checkbox" [checked]="selectedOptions1.has(i)" (click)="toggleSelection(i, 1, $event)" />
+      <input
+        type="checkbox"
+        [checked]="selectedOptions1.has(i)"
+        (click)="toggleSelection(i, 1, $event)"
+      />
       <label>{{ option.description }}</label>
     </div>
   </div>
-  
 
   <div class="question">
     <h2>{{ question2 }}</h2>
@@ -24,7 +26,11 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-    <input type="checkbox" [checked]="selectedOptions2.has(i)" (click)="toggleSelection(i, 2, $event)" />
+      <input
+        type="checkbox"
+        [checked]="selectedOptions2.has(i)"
+        (click)="toggleSelection(i, 2, $event)"
+      />
       <label>{{ option.description }}</label>
     </div>
   </div>
@@ -38,12 +44,16 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-    <input type="checkbox" [checked]="selectedOptions3.has(i)" (click)="toggleSelection(i, 3, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions3.has(i)"
+        (click)="toggleSelection(i, 3, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
-   <div class="question">
+  <div class="question">
     <h2>{{ question4 }}</h2>
     <div
       *ngFor="let option of options4; let i = index"
@@ -52,12 +62,16 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-    <input type="checkbox" [checked]="selectedOptions4.has(i)" (click)="toggleSelection(i, 4, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions4.has(i)"
+        (click)="toggleSelection(i, 4, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
- <div class="question">
+  <div class="question">
     <h2>{{ question5 }}</h2>
     <div
       *ngFor="let option of options5; let i = index"
@@ -66,8 +80,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions5.has(i)" (click)="toggleSelection(i, 5, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions5.has(i)"
+        (click)="toggleSelection(i, 5, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -80,8 +98,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions6.has(i)" (click)="toggleSelection(i, 6, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions6.has(i)"
+        (click)="toggleSelection(i, 6, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -94,8 +116,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions7.has(i)" (click)="toggleSelection(i, 7, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions7.has(i)"
+        (click)="toggleSelection(i, 7, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -108,8 +134,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions8.has(i)" (click)="toggleSelection(i, 8, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions8.has(i)"
+        (click)="toggleSelection(i, 8, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -122,8 +152,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions9.has(i)" (click)="toggleSelection(i, 9, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions9.has(i)"
+        (click)="toggleSelection(i, 9, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -136,8 +170,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-      <input type="checkbox" [checked]="selectedOptions10.has(i)" (click)="toggleSelection(i, 10, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions10.has(i)"
+        (click)="toggleSelection(i, 10, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -150,8 +188,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions11.has(i)" (click)="toggleSelection(i, 11, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions11.has(i)"
+        (click)="toggleSelection(i, 11, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -164,8 +206,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions12.has(i)" (click)="toggleSelection(i, 12, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions12.has(i)"
+        (click)="toggleSelection(i, 12, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -178,8 +224,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions13.has(i)" (click)="toggleSelection(i, 13, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions13.has(i)"
+        (click)="toggleSelection(i, 13, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -192,8 +242,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions14.has(i)" (click)="toggleSelection(i, 14, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions14.has(i)"
+        (click)="toggleSelection(i, 14, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -206,8 +260,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-      <input type="checkbox" [checked]="selectedOptions15.has(i)" (click)="toggleSelection(i, 15, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions15.has(i)"
+        (click)="toggleSelection(i, 15, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -220,8 +278,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions16.has(i)" (click)="toggleSelection(i, 16, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions16.has(i)"
+        (click)="toggleSelection(i, 16, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -234,8 +296,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions17.has(i)" (click)="toggleSelection(i, 17, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions17.has(i)"
+        (click)="toggleSelection(i, 17, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -248,8 +314,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-       <input type="checkbox" [checked]="selectedOptions18.has(i)" (click)="toggleSelection(i, 18, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions18.has(i)"
+        (click)="toggleSelection(i, 18, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -262,8 +332,12 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-      <input type="checkbox" [checked]="selectedOptions19.has(i)" (click)="toggleSelection(i, 19, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions19.has(i)"
+        (click)="toggleSelection(i, 19, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
@@ -276,17 +350,32 @@
         incorrect: option.selectedCorrectly === false
       }"
     >
-      <input type="checkbox" [checked]="selectedOptions20.has(i)" (click)="toggleSelection(i, 20, $event)" />
-    <label>{{ option.description }}</label>
+      <input
+        type="checkbox"
+        [checked]="selectedOptions20.has(i)"
+        (click)="toggleSelection(i, 20, $event)"
+      />
+      <label>{{ option.description }}</label>
     </div>
   </div>
 
-<h3>Légende: rouge = réponse fausse, vert bonne réponse (une mauvaise réponse non cochée = vert)</h3>
-<p>Exemple à la question: De quelle couleur est la neige ? si vous cochez blanc, blanc sera en vert, et noire et rouge en vert aussi si vous ne les avez pas cochées</p>
+  <h3>
+    Légende: rouge = réponse fausse, vert bonne réponse (une mauvaise réponse
+    non cochée = vert)
+  </h3>
+  <p>
+    Exemple à la question: De quelle couleur est la neige ? si vous cochez
+    blanc, blanc sera en vert, et noire et rouge en vert aussi si vous ne les
+    avez pas cochées
+  </p>
   <button (click)="submitAll()" class="submit-button">Vérifier</button>
   <div class="error-message">{{ totalErrorMessage }}</div>
 </div>
 
 <footer>
-    <img src="https://knightparabellum.000webhostapp.com/img/footer5.png" alt="footer" style="width: 100%;">
-   </footer>
+  <img
+    src="../.././assets/images/footer5.png"
+    alt="footer"
+    style="width: 100%"
+  />
+</footer>
