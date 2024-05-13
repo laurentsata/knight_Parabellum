@@ -27,6 +27,7 @@ import { TargetComponent } from './target/target.component';
 import { AngleComponent } from './angle/angle.component';
 import { ModalComponent } from './modal/modal.component';
 import { QuestionComponent } from './question/question.component';
+import { TutoComponent } from './tuto/tuto.component';
 
 
 
@@ -52,6 +53,7 @@ import { QuestionComponent } from './question/question.component';
     AngleComponent,
     ModalComponent,
     QuestionComponent,
+    TutoComponent,
 
 
   ],
