@@ -14,6 +14,7 @@ import { ClickComponent } from './click/click.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { TargetComponent } from './target/target.component';
 import { QuestionComponent } from './question/question.component';
+import { TutoComponent } from './tuto/tuto.component';
 
 const routes: Routes = [
   // {
@@ -39,7 +40,7 @@ const routes: Routes = [
 
   { path: 'frame', component: FrameComponent },
 
-  { path: 'tuto', component: FooterComponent },
+  { path: 'tuto', component: TutoComponent },
 
   { path: 'contact', component: ContactComponent },
 
