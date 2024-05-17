@@ -17,24 +17,12 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
-  // background-color: #94939d;
   background-color: #5C5C5C;
   box-shadow: 5px 5px 10px #888888;
   height: 2rem;
   align-items: center;
 }
 
-// a {
-//   text-decoration: none;
-//   font-size: 120%;
-//   color: white;
-//   cursor: pointer;
-// }
-
-// a:hover {
-//   color: rgb(177, 219, 238);
-//   border-top: 10px solid #fff;
-// }
 
 a {
   color: white;
@@ -60,9 +48,7 @@ a:hover:after {
 }
 
 .active-link {
-  // color: rgb(219, 234, 241);
   color: #BAD9E8;
-  // border-top: 11.5px solid #fff;
 }
 
 @media screen and (max-width: 428px) {
