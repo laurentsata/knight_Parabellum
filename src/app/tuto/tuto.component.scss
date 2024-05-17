@@ -28,7 +28,10 @@ h1, p{
     transition: 0.4s;
     position: absolute;
   }
-  
+  .bar1, .bar2, .bar3{
+    max-width: 1.4rem;
+    max-height: 0.2rem;
+  }
   .menu-button .bar1 {
     top: 0;
   }
@@ -55,13 +58,15 @@ h1, p{
   
   .menu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  list-style: none;
+  max-height: 100px; /* Limite la hauteur du menu */
+  overflow-y: auto; /* Active le défilement vertical si nécessaire */
   }
   
   .menu.active {
@@ -74,7 +79,7 @@ h1, p{
     top: 35vh;
     left: 5;
     width: 10vw; /* Largeur de la barre de navigation */
-    height: 27vw; /* Hauteur de la fenêtre */
+    max-height: 5px; /* Hauteur de la fenêtre */
     // background-color: white; /* Fond de la barre de navigation */
     background-color: (255, 255, 255, 0.8); /* Fond transparent */
     z-index: 1000; /* Pour s'assurer que la barre de navigation est au-dessus du contenu */
@@ -174,7 +179,14 @@ nav ul li a:hover {
       box-shadow: inherit;
     }
     .header{
-      top: 10vh;
+      top: 47vh;
+      
+      max-height: 50px;
+      // width: 85vw;
+      // display: none;
+    }
+    nav ul li a {
+      font-size: 3vw;
     }
   }
   
@@ -182,5 +194,9 @@ nav ul li a:hover {
     footer {
       display: none;
     }
+    @media  screen and (max-width: 600px){
+      .header{
+        top: 25vh;
+    }
   }
-  
+}
