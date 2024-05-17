@@ -3,8 +3,31 @@
   Attention, le non respect des règles de la FFTIR peut conduire à la radiation
 </p>
 
+<div class="header">
+  <nav class="menu-container">
+    <div class="menu-button" (click)="toggleMenu()"  [ngClass]="{'open': isMenuOpen}">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <ul class="menu" [ngClass]="{'active': isMenuOpen}">
+      <li><a (click)="navigateToFragment('')">Haut de page</a></li>
+      <li><a (click)="navigateToFragment('section1')">SIA</a></li>
+      <li><a (click)="navigateToFragment('section2')">Débuter le tir</a></li>
+      <li><a (click)="navigateToFragment('section3')">Technique pour le tir</a></li>
+      <li><a (click)="navigateToFragment('section4')">Réglage lunette</a></li>
+      <li><a (click)="navigateToFragment('section5')">Fonctionnement armes</a></li>
+      <li><a (click)="navigateToFragment('section6')">Rechargement</a></li>
+      <li><a (click)="navigateToFragment('section7')">Poudre noire</a></li>
+      <li><a (click)="navigateToFragment('section8')">Entretien</a></li>
+      <li><a (click)="navigateToFragment('section9')">Essais armes</a></li>
+      <li><a (click)="navigateToFragment('section10')">Arbalète</a></li>
+    </ul>
+  </nav>
+</div>
+
 <div class="container">
-  <h2>** SIA **</h2>
+  <h2 id="section1">** SIA **</h2>
   <div class="frame">
     <!--SIA-->
 
@@ -27,7 +50,7 @@
     ></iframe>
 
     <!--debuter le tir-->
-    <h2>** Débuter le tir **</h2>
+    <h2 id="section2">** Débuter le tir **</h2>
     <div class="frame">
       <iframe
         width="560"
@@ -129,7 +152,7 @@
         allowfullscreen
       ></iframe>
 
-      <h2>** Technique pour le tir **</h2>
+      <h2 id="section3">** Technique pour le tir **</h2>
       <!-- Coup de doigt -->
       <iframe
         width="560"
@@ -159,7 +182,7 @@
         allowfullscreen
       ></iframe>
 
-      <h2>** Réglage lunette **</h2>
+      <h2 id="section4">** Réglage lunette **</h2>
       <!--lunette-->
 
       <iframe
@@ -190,7 +213,7 @@
         allowfullscreen
       ></iframe>
 
-      <h2>** Fonctionnement des armes **</h2>
+      <h2 id="section5">** Fonctionnement des armes **</h2>
       <!--fonctionnement arme-->
       <iframe
         width="560"
@@ -237,7 +260,7 @@
         allowfullscreen
       ></iframe>
 
-      <h2>** Rechargement poudre "vive" **</h2>
+      <h2 id="section6">** Rechargement poudre "vive" **</h2>
       <!--rechargement-->
 
       <iframe
@@ -267,7 +290,7 @@
         allowfullscreen
       ></iframe>
 
-      <h2>** Poudre noire **</h2>
+      <h2 id="section7">** Poudre noire **</h2>
       <!--poudre noire-->
       <!-- jp vadana -->
 
@@ -301,7 +324,7 @@
         allowfullscreen
       ></iframe>
 
-      <h2>** Entretien **</h2>
+      <h2 id="section8">** Entretien **</h2>
 
       <!-- nettoyage arme demontage -->
       <iframe
@@ -367,7 +390,7 @@
         allowfullscreen
       ></iframe>
 
-      <h2>** Essais d'armes **</h2>
+      <h2 id="section9">** Essais d'armes **</h2>
 
       <!--essais armes-->
       <!-- cp2 -->
@@ -505,7 +528,7 @@
         allowfullscreen
       ></iframe>
 
-      <h2>** Arbalète **</h2>
+      <h2 id="section10">** Arbalète **</h2>
       <!-- arbalete et arc -->
       <iframe
         width="560"

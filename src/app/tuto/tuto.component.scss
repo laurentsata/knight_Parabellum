@@ -7,6 +7,102 @@ h1, p{
     text-align: center;
     width: 100%; /* Pour centrer le titre sur toute la largeur */
   }
+
+  .menu-container {
+    position: relative;
+  }
+  
+  .menu-button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 25px;
+  }
+  
+  .menu-button div {
+    background-color: #333;
+    height: 4px;
+    width: 100%;
+    margin: 4px 0;
+    transition: 0.4s;
+    position: absolute;
+  }
+  
+  .menu-button .bar1 {
+    top: 0;
+  }
+  
+  .menu-button .bar2 {
+    top: 10px;
+  }
+  
+  .menu-button .bar3 {
+    top: 20px;
+  }
+  
+  .menu-button.open .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .menu-button.open .bar2 {
+    opacity: 0;
+  }
+  
+  .menu-button.open .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    list-style: none;
+  }
+  
+  .menu.active {
+    display: block;
+  }
+  
+
+  .header {
+    position: fixed;
+    top: 35vh;
+    left: 5;
+    width: 10vw; /* Largeur de la barre de navigation */
+    height: 27vw; /* Hauteur de la fenêtre */
+    // background-color: white; /* Fond de la barre de navigation */
+    background-color: (255, 255, 255, 0.8); /* Fond transparent */
+    z-index: 1000; /* Pour s'assurer que la barre de navigation est au-dessus du contenu */
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre sous la barre de navigation */
+    display: flex;
+    flex-direction: column; /* Placer les éléments en colonne */
+    justify-content: flex-start; /* Aligner les éléments en haut */
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+   
+  }
+  
+  nav ul li {
+    margin: 1vw 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8vw;
+  }
+nav ul li a:hover {
+  color: red;
+}
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +176,7 @@ h1, p{
   }
   
   @media screen and (max-width: 799px) {
-    footer {
+    footer, .header {
       display: none;
     }
   }
