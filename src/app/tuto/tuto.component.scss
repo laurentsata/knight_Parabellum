@@ -173,10 +173,13 @@ nav ul li a:hover {
       border-radius: inherit;
       box-shadow: inherit;
     }
+    .header{
+      top: 10vh;
+    }
   }
   
   @media screen and (max-width: 799px) {
-    footer, .header {
+    footer {
       display: none;
     }
   }
