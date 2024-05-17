@@ -32,6 +32,11 @@ h1, p{
     max-width: 1.4rem;
     max-height: 0.2rem;
   }
+  .header .menu-container .menu-button .bar1,
+.header .menu-container .menu-button .bar2,
+.header .menu-container .menu-button .bar3 {
+  background-color: blue; /* Ajout de cette ligne pour définir la couleur des barres en bleu */
+}
   .menu-button .bar1 {
     top: 0;
   }
@@ -180,10 +185,7 @@ nav ul li a:hover {
     }
     .header{
       top: 47vh;
-      
       max-height: 50px;
-      // width: 85vw;
-      // display: none;
     }
     nav ul li a {
       font-size: 3vw;
