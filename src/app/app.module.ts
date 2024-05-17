@@ -10,7 +10,6 @@ import { ArmoryComponent } from './armory/armory.component';
 import { LinkComponent } from './link/link.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { BannerComponent } from './banner/banner.component';
-import { FrameComponent } from './frame/frame.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -37,7 +36,6 @@ import { TutoComponent } from './tuto/tuto.component';
     LinkComponent,
     BurgerMenuComponent,
     BannerComponent,
-    FrameComponent,
     ContactComponent,
     ValidateComponent,
     ConverterComponent,

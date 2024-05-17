@@ -4,7 +4,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ArmoryComponent } from './armory/armory.component';
 import { LinkComponent } from './link/link.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
-import { FrameComponent } from './frame/frame.component';
 import { ContactComponent } from './contact/contact.component';
 import { ValidateComponent } from './validate/validate.component';
 import { ConverterComponent } from './converter/converter.component';
@@ -31,8 +30,6 @@ const routes: Routes = [
 
   { path: 'burger', component: BurgerMenuComponent },
 
-
-  { path: 'frame', component: FrameComponent },
 
   { path: 'tuto', component: TutoComponent },
 
