@@ -6,7 +6,6 @@ import { LinkComponent } from './link/link.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FrameComponent } from './frame/frame.component';
-import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ValidateComponent } from './validate/validate.component';
 import { ConverterComponent } from './converter/converter.component';
@@ -17,10 +16,7 @@ import { QuestionComponent } from './question/question.component';
 import { TutoComponent } from './tuto/tuto.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: HomePageComponent,
-  // },
+ 
   {
   path: '',
     component: AccueilComponent,
@@ -54,7 +50,6 @@ const routes: Routes = [
   
   { path: 'question', component: QuestionComponent },
 
-  // { path: 'accueil', component: AccueilComponent },
 ];
 
 @NgModule({
