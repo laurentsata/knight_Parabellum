@@ -10,109 +10,42 @@ h1, p{
 
   .menu-container {
     position: relative;
+    background-color: dimgray;
   }
   
-  .menu-button {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    width: 30px;
-    height: 25px;
+  .menu-select {
+ 
+    width: 135px;
+    font-size: 0.8rem;
+    background-color: #5C5C5C;
   }
-  
-  .menu-button div {
-    background-color: #333;
-    height: 4px;
-    width: 100%;
-    margin: 4px 0;
-    transition: 0.4s;
-    position: absolute;
-  }
-  .bar1, .bar2, .bar3{
-    max-width: 1.4rem;
-    max-height: 0.2rem;
-  }
-  .header .menu-container .menu-button .bar1,
-.header .menu-container .menu-button .bar2,
-.header .menu-container .menu-button .bar3 {
-  background-color: blue; /* Ajout de cette ligne pour définir la couleur des barres en bleu */
-}
-  .menu-button .bar1 {
-    top: 0;
-  }
-  
-  .menu-button .bar2 {
-    top: 10px;
-  }
-  
-  .menu-button .bar3 {
-    top: 20px;
-  }
-  
-  .menu-button.open .bar1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  
-  .menu-button.open .bar2 {
-    opacity: 0;
-  }
-  
-  .menu-button.open .bar3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-  
-  .menu {
-    display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
-  list-style: none;
-  max-height: 100px; /* Limite la hauteur du menu */
-  overflow-y: auto; /* Active le défilement vertical si nécessaire */
-  }
-  
-  .menu.active {
-    display: block;
-  }
-  
+.mat-toolbar-row{
+  background-color: #5C5C5C;
+  z-index: 1000; /* Pour s'assurer que la barre de navigation est au-dessus du contenu */
+  display: flex; 
+  justify-content: center;
 
+}
+  .mdc-list-item__primary-text{
+    font-size: 2px;
+    color: red;
+  }
+mat-option{
+  font-size: 0.7rem;
+  text-align: center;
+  
+}
   .header {
     position: fixed;
-    top: 35vh;
-    left: 11px;
-    width: 10vw; /* Largeur de la barre de navigation */
-    max-height: 5px; /* Hauteur de la fenêtre */
-    // background-color: white; /* Fond de la barre de navigation */
-    background-color: (255, 255, 255, 0.8); /* Fond transparent */
+    top: 30vh;
+    left: 45px;
+    width: 5%;
+    background-color: #5C5C5C;
     z-index: 1000; /* Pour s'assurer que la barre de navigation est au-dessus du contenu */
-    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre sous la barre de navigation */
     display: flex;
-    flex-direction: column; /* Placer les éléments en colonne */
-    justify-content: flex-start; /* Aligner les éléments en haut */
+    justify-content: center; /* Centrer les éléments horizontalement */
   }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-   
-  }
-  
-  nav ul li {
-    margin: 1vw 0;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 0.8vw;
-  }
-nav ul li a:hover {
-  color: red;
-}
+
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -160,6 +93,7 @@ nav ul li a:hover {
     footer {
       padding-top: 4.55%;
     }
+    
   }
   
   @media screen and (max-width: 886px) {
@@ -171,6 +105,10 @@ nav ul li a:hover {
   @media screen and (max-width: 836px) {
     footer {
       padding-top: 35.55%;
+    }
+    .header {
+      top: 8.5rem;
+      left: 4rem;
     }
   }
   
@@ -184,11 +122,8 @@ nav ul li a:hover {
       box-shadow: inherit;
     }
     .header{
-      top: 47vh;
-      max-height: 50px;
-    }
-    nav ul li a {
-      font-size: 3vw;
+      top: 8.2rem;
+      left: 4rem;
     }
   }
   
@@ -196,9 +131,18 @@ nav ul li a:hover {
     footer {
       display: none;
     }
+  }
     @media  screen and (max-width: 600px){
       .header{
-        top: 25vh;
-    }
+        top: 8rem;
+        left: 20rem;
+      }
+  }
+
+
+@media screen and (max-width: 570px) {
+ .header {
+    top: 7rem;
+    left: 17rem;
   }
 }

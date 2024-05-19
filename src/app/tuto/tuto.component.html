@@ -3,7 +3,7 @@
   Attention, le non respect des règles de la FFTIR peut conduire à la radiation
 </p>
 
-<div class="header">
+<!-- <div class="header">
   <nav class="menu-container">
     <div class="menu-button" (click)="toggleMenu()"  [ngClass]="{'open': isMenuOpen}">
       <div class="bar1"></div>
@@ -24,7 +24,31 @@
       <li><a (click)="navigateToFragment('section10')">Arbalète</a></li>
     </ul>
   </nav>
+</div> -->
+
+<div class="header">
+  <nav class="menu-container">
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <mat-select placeholder="Sélection" class="menu-select" disableRipple>
+          <mat-option style="color: red;" (click)="navigateToFragment('')">Haut de page</mat-option>
+          <mat-option (click)="navigateToFragment('section1')">SIA</mat-option>
+          <mat-option (click)="navigateToFragment('section2')">Débuter le tir</mat-option>
+          <mat-option (click)="navigateToFragment('section3')">Technique de tir</mat-option>
+          <mat-option (click)="navigateToFragment('section4')">Réglage lunette</mat-option>
+          <mat-option (click)="navigateToFragment('section5')">Fonction armes</mat-option>
+          <mat-option (click)="navigateToFragment('section6')">Rechargement</mat-option>
+          <mat-option (click)="navigateToFragment('section7')">Poudre noire</mat-option>
+          <mat-option (click)="navigateToFragment('section8')">Entretien</mat-option>
+          <mat-option (click)="navigateToFragment('section9')">Essais armes</mat-option>
+          <mat-option (click)="navigateToFragment('section10')">Arbalète</mat-option>
+        </mat-select>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </nav>
 </div>
+
+
 
 <div class="container">
   <h2 id="section1">** SIA **</h2>

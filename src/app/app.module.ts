@@ -25,6 +25,10 @@ import { ModalComponent } from './modal/modal.component';
 import { QuestionComponent } from './question/question.component';
 import { TutoComponent } from './tuto/tuto.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSelectModule } from '@angular/material/select';
+
 
 
 @NgModule({
@@ -56,6 +60,10 @@ import { TutoComponent } from './tuto/tuto.component';
         MatButtonModule,
         MatFormFieldModule,
         MatDialogModule,
+
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatSelectModule,
 
         FormsModule,
         ReactiveFormsModule
