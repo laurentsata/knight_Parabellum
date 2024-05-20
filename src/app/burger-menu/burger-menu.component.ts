@@ -8,7 +8,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('fadeInOut', [
       state('in', style({ opacity: 1 })),
-      transition(':enter', [style({ opacity: 0 }), animate(80000)]),
+      transition(':enter', [style({ opacity: 0 })]),
       transition(':leave', animate(1000, style({ opacity: 0 }))),
     ]),
   ],
