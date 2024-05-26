@@ -55,6 +55,7 @@ mat-option{
   }
   iframe{
     width: 55vh;
+    height: 17%;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,7 +63,7 @@ mat-option{
   
   footer{
     position: static;
-    padding-top: 21.55%;
+    padding-top: 235%;
     bottom: 0;
     width: 100%;
    }
@@ -77,12 +78,15 @@ mat-option{
   
   @media screen and (max-width: 1920px) {
     footer {
-      padding-top: 0.55%;
+      padding-top: 100%;
     }
     .header {
       left: 2.4rem;
     }
+    iframe {
+      height: 6%;
   }
+}
   
   @media screen and (max-width: 1280px) {
     footer {
@@ -131,6 +135,9 @@ mat-option{
       .header{
         top: 8rem;
         left: 20rem;
+      }
+      iframe{
+        height: 2.3%;
       }
   }
 
