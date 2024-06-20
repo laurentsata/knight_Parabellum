@@ -28,7 +28,7 @@ import { TutoComponent } from './tuto/tuto.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
-
+import { SearchService } from './search.service';
 
 
 @NgModule({
@@ -68,7 +68,7 @@ import { MatSelectModule } from '@angular/material/select';
         FormsModule,
         ReactiveFormsModule
     ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

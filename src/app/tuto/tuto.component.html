@@ -1,4 +1,4 @@
-<h1>Tuto</h1>
+<h1 id="top">Tuto</h1>
 <p>
   Attention, le non respect des règles de la FFTIR peut conduire à la radiation
 </p>
@@ -7,7 +7,7 @@
     <mat-toolbar>
       <mat-toolbar-row>
         <mat-select placeholder="Sélection" class="menu-select" disableRipple>
-          <mat-option style="color: red;" (click)="navigateToFragment('')">Haut de page</mat-option>
+          <mat-option style="color: red;" (click)="navigateToTop()">Haut de page</mat-option>
           <mat-option (click)="navigateToFragment('section1')">SIA</mat-option>
           <mat-option (click)="navigateToFragment('section2')">Débuter le tir</mat-option>
           <mat-option (click)="navigateToFragment('section3')">Technique de tir</mat-option>
@@ -17,7 +17,7 @@
           <mat-option (click)="navigateToFragment('section7')">Poudre noire</mat-option>
           <mat-option (click)="navigateToFragment('section8')">Entretien</mat-option>
           <mat-option (click)="navigateToFragment('section9')">Essais armes</mat-option>
-          <mat-option (click)="navigateToFragment('section10')">Arbalète</mat-option>
+          <mat-option (click)="navigateFragment('section10')">Arbalète</mat-option>
         </mat-select>
       </mat-toolbar-row>
     </mat-toolbar>
