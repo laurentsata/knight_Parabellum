@@ -1,5 +1,13 @@
 <div class="wrapper">
   <div class="">
+  <div class="search">
+    <input type="text" [(ngModel)]="query" (input)="onSearch()" placeholder="Recherche...">
+    <ul>
+      <li *ngFor="let result of results" (click)="navigateTo(result)">
+        {{ result.text }}
+      </li>
+    </ul>
+  </div>
     <div class="slogan">
       <h1>Tir sportif : la précision et l'attention</h1>
     </div>
