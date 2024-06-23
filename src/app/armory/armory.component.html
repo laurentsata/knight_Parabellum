@@ -1,156 +1,70 @@
-<h1>
-  Les armureries
-</h1>
+<h1>Les armureries</h1>
+<p>Code réduction 10% pour TA.DEFENSE: Trop d'la Balle</p>
 
-<div class="container">
+<div *ngIf="isOnline; else offlineTemplate" class="container">
   <div class="img">
-    
-    <a href="https://www.armesconcept.fr">
+    <a href="https://www.tadefense.com/">
       <img
-        src="../.././assets/images/logo1.png"
-        alt="Armes concept, armurerie"
-        style="width: 225px"
-      />
-    </a>
-
-    <a href="https://www.leydier-armurerie.fr">
-      <img
-        src="https://www.leydier-armurerie.fr/ressources/images/d9d932b68adc.png"
-        alt="Armurerie Leydier"
-        style="width: 225px"
-      />
-    </a>
-
-
-
-    <a href="https://www.meyson.fr/">
-      <img
-        src="https://www.meyson.fr/img/ps-type-logo-1672650397.jpg
-        "
-        alt="armurerie Meyson"
-        style="width: 225px"
-      />
-    </a>
-
-
-    <a href="https://www.armurerie-auxerre.com/">
-      <img
-        src="https://www.armurerie-auxerre.com/static/version1699536173/frontend/Armamag/default/fr_FR/images/logo.svg
-        "
-        alt="armurerie-auxerre"
-        style="width: 225px"
-      />
-    </a>
-
-    <a href="https://www.armurerie-gilles.com">
-      <img
-        src="https://www.armurerie-gilles.com/images/logo_arg.png"
-        alt="Gilles armurerie"
-        style="width: 225px"
-      />
-    </a>
-
-
-    <a href="https://www.frankonia.fr/">
-      <img src="https://www.frankonia.fr/img/app/frankonia_logo1.svg?v=fc04189b" alt="Armurerie frankonia"
-      style="width: 225px"
-      />
-    </a>
-
-
-    <a href="https://www.armurerie-loisir.fr/">
-      <img
-        src="https://www.armurerie-loisir.fr/img/logo-1.jpg?1688655206"
-        alt="Armurerie loisir"
-        style="width: 225px"
-      />
-    </a>
-
-    <a href="https://canikshop.com/">
-      <img src="https://i0.wp.com/canikshop.com/wp-content/uploads/2023/07/cropped-Lobster-2.png?w=458&ssl=1/" alt="Armurerie Canikshop"
-      style="width: 225px"
-      />
-    </a>
-
-    <a href="https://air-soft.gun-evasion.com">
-      <img
-        src="https://air-soft.gun-evasion.com/themes/html_responsive/modeles/58/img/logo/logo_header_1.png"
-        alt="Air soft"
-        style="width: 225px"
-      />
-    </a>
-
-    <a
-        href="https://www.armurerie-chasseur.com/vente-chasse-equipement-de-l-arme-coffres-armoires-fortes-rateliers-3468,0,0,0.html"
-      >
-        <img
-          src="https://static.armurerie-chasseur.com/responsive/chasseur/dist-img/logo/Logo-Chasseur-Armurerie.png"
-          alt="Armurerie chasseur"
-          style="width: 225px"
-        />
-      </a>
-
-    <a href="https://www.armurerie-lavaux.com/index.php">
-      <img
-        src="https://www.armurerie-lavaux.com/images/logo-lavaux.png
-        "
-        alt="armurerie-lavaux"
-        style="width: 225px"
-      />
-    </a>
-
-    <a href="https://www.westernguns.fr/">
-      <img
-        src="http://www.westernguns.fr//themes/westernguns/img/wg/logo-refonte.png
-        "
-        alt="westernguns"
-        style="width: 225px"
-      />
-    </a>
-
-    <a href="https://estote-parati.com/fr/">
-      <img
-        src="https://estote-parati.com/img/estote-parati-logo-1553554104.jpg
-        "
-        alt="Accessoires de tir et chasse Estote Parati"
+        src="../.././assets/images/tadefense.png"
+        alt="T.A DEFENSE, armurerie"
         style="width: 150px"
       />
     </a>
-
+    <a href="https://www.armesconcept.fr">
+      <img src="../.././assets/images/logo1.png" alt="Armes concept, armurerie" style="width: 225px" />
+    </a>
+    <a href="https://www.leydier-armurerie.fr">
+      <img src="https://www.leydier-armurerie.fr/ressources/images/d9d932b68adc.png" alt="Armurerie Leydier" style="width: 225px" />
+    </a>
+    <a href="https://www.meyson.fr/">
+      <img src="https://www.meyson.fr/img/ps-type-logo-1672650397.jpg" alt="armurerie Meyson" style="width: 225px" />
+    </a>
+    <a href="https://www.armurerie-auxerre.com/">
+      <img src="https://www.armurerie-auxerre.com/static/version1699536173/frontend/Armamag/default/fr_FR/images/logo.svg" alt="armurerie-auxerre" style="width: 225px" />
+    </a>
+    <a href="https://www.armurerie-gilles.com">
+      <img src="https://www.armurerie-gilles.com/images/logo_arg.png" alt="Gilles armurerie" style="width: 225px" />
+    </a>
+    <a href="https://www.frankonia.fr/">
+      <img src="https://www.frankonia.fr/img/app/frankonia_logo1.svg?v=fc04189b" alt="Armurerie frankonia" style="width: 225px" />
+    </a>
+    <a href="https://www.armurerie-loisir.fr/">
+      <img src="https://www.armurerie-loisir.fr/img/logo-1.jpg?1688655206" alt="Armurerie loisir" style="width: 225px" />
+    </a>
+    <a href="https://canikshop.com/">
+      <img src="https://i0.wp.com/canikshop.com/wp-content/uploads/2023/07/cropped-Lobster-2.png?w=458&ssl=1/" alt="Armurerie Canikshop" style="width: 225px" />
+    </a>
+    <a href="https://air-soft.gun-evasion.com">
+      <img src="https://air-soft.gun-evasion.com/themes/html_responsive/modeles/58/img/logo/logo_header_1.png" alt="Air soft" style="width: 225px" />
+    </a>
+    <a href="https://www.armurerie-chasseur.com/vente-chasse-equipement-de-l-arme-coffres-armoires-fortes-rateliers-3468,0,0,0.html">
+      <img src="https://static.armurerie-chasseur.com/responsive/chasseur/dist-img/logo/Logo-Chasseur-Armurerie.png" alt="Armurerie chasseur" style="width: 225px" />
+    </a>
+    <a href="https://www.armurerie-lavaux.com/index.php">
+      <img src="https://www.armurerie-lavaux.com/images/logo-lavaux.png" alt="armurerie-lavaux" style="width: 225px" />
+    </a>
+    <a href="https://www.westernguns.fr/">
+      <img src="http://www.westernguns.fr//themes/westernguns/img/wg/logo-refonte.png" alt="westernguns" style="width: 225px" />
+    </a>
+    <a href="https://estote-parati.com/fr/">
+      <img src="https://estote-parati.com/img/estote-parati-logo-1553554104.jpg" alt="Accessoires de tir et chasse Estote Parati" style="width: 150px" />
+    </a>
     <a href="https://armurerie-tir-au-plomb.com/">
-      <img
-        src="https://armurerie-tir-au-plomb.com/img/atap-theme-logo-1508853210.jpg
-        "
-        alt="armurerie-tir-au-plomb"
-        style="width: 225px"
-      />
+      <img src="https://armurerie-tir-au-plomb.com/img/atap-theme-logo-1508853210.jpg" alt="armurerie-tir-au-plomb" style="width: 225px" />
     </a>
-
     <a href="https://www.hc-collection.com/calibre-44-c102x3581892">
-      <img
-        src="../.././assets/images/logoHC.png"
-        alt="H&C"
-        style="width: 225px"
-      />
+      <img src="../.././assets/images/logoHC.png" alt="H&C" style="width: 225px" />
     </a>
-
-
     <a href="https://www.hattila.com/fr/">
-      <img
-        src="https://www.hattila.com/themes/arpa-rocket/assets/img/logo.svg
-        "
-        alt="Spécialiste de l'arbalète Hattila"
-        style="width: 225px"
-      />
+      <img src="https://www.hattila.com/themes/arpa-rocket/assets/img/logo.svg" alt="Spécialiste de l'arbalète Hattila" style="width: 225px" />
     </a>
-
   </div>
-
 </div>
+
+<ng-template #offlineTemplate>
+  <p>Vous êtes hors connexion</p>
+</ng-template>
+
 <footer>
-  <img
-      src="../.././assets/images/footer5.png"
-      alt="footer"
-      style="width: 100%"
-    />
+  <img src="../.././assets/images/footer5.png" alt="footer" style="width: 100%" />
 </footer>

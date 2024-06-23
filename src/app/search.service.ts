@@ -19,6 +19,9 @@ export class SearchService {
       { section: 'section10', text: 'Arbalète', page: 'tuto' },
       { section: 'section11', text: 'SIA pour les tireurs', page: 'news' },
       { section: 'section12', text: 'SIA foire aux questions', page: 'news' },
+      { section: 'section17', text: 'Convertisseurs Grains, Grammes', page: 'balistique' },
+      { section: 'section18', text: 'Clic,click, reglage lunette, réglage lunette', page: 'balistique' },
+      { section: 'section19', text: 'Convertisseur MOA en MRAD', page: 'balistique' },
       { section: 'section20', text: 'Reglage /Réglage organes de visée (schémas)', page: 'balistique' },
  
     ];

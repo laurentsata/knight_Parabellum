@@ -1,5 +1,4 @@
 <div class="wrapper">
-  <div class="">
   <div class="search">
     <input type="text" [(ngModel)]="query" (input)="onSearch()" placeholder="Recherche...">
     <ul>
@@ -8,10 +7,8 @@
       </li>
     </ul>
   </div>
-    <div class="slogan">
-      <h1>Tir sportif : la précision et l'attention</h1>
-    </div>
-    <div></div>
+  <div class="slogan">
+    <h1>Tir sportif : la précision et l'attention</h1>
   </div>
   <div class="container">
     <div class="texte">
@@ -35,7 +32,6 @@
         pour débuter dans le tir sportif.
       </p>
     </div>
-
     <div class="image">
       <img
         src="https://www.sports.gouv.fr/sites/default/files/2022-08/pistolet-25m-c-bessaguet-fftir-f-perville-jpg-466.jpg"
@@ -44,24 +40,20 @@
       />
     </div>
   </div>
-  <div class="">
-    <div class="frame">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/e77SohoxgoY?si=GMdCHHeBEg6nadPe"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
+  <div class="frame">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/e77SohoxgoY?si=GMdCHHeBEg6nadPe"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
   </div>
 
   <div class="container">
     <div class="texte">
       <h2>Le tir à 10 mètres :</h2>
-
-      Bien sûr, voici une version structurée avec des paragraphes séparés :
 
       <p>
         Le tir sportif à 10 mètres est une discipline populaire pratiquée à
@@ -120,7 +112,6 @@
         monde.
       </p>
     </div>
-
     <div class="image">
       <img
         src="https://cdn-s-www.leprogres.fr/images/C4FD377E-2F73-4EA7-8110-A0023A194F97/NW_detail/au-premier-plan-coline-gallien-(sees)-premiere-en-d1-et-paul-chevalier-du-stsm-(2e-en-s1)-durant-leur-match-pistolet-vitesse-photo-progres-antoine-quinson-1639345811.jpg"
@@ -216,7 +207,6 @@
         communauté passionnée.
       </p>
     </div>
-
     <div class="image">
       <img
         src="https://www.fftir.org/wp-content/uploads/2020/02/48054336433_2a8ffd2ef6_c.jpg"
@@ -312,9 +302,7 @@
         qui transcende le simple aspect compétitif.
       </p>
     </div>
-
     <div class="image">
-      
       <img
         src="https://www.armes-ufa.com/local/cache-vignettes/L241xH134/rubon87-1cc1c.jpg"
         alt="Tireurs en position de tir aux armes règlementaires"
@@ -344,13 +332,16 @@
       allowfullscreen
     ></iframe>
   </div>
+
+  <div *ngIf="pwaInstallService.canPrompt()" class="install-banner">
+    <p>Voulez-vous installer cette application ?</p>
+    <div class="button-group">
+    <button class="install-button" (click)="pwaInstallService.promptInstall()">Installer</button>
+    <button class="reject-button" (click)="rejectPwa()">Refuser</button>
+    </div>
+  </div>
 </div>
 <footer>
   <a href="https://www.denicher.com">référencement</a>
-
-  <img
-      src="../.././assets/images/footer5.png"
-      alt="footer"
-      style="width: 100%"
-    />
+  <img src="../.././assets/images/footer5.png" alt="footer" style="width: 100%" />
 </footer>
