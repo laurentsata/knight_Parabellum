@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 import { SearchService } from '../search.service';
 import { Router } from '@angular/router';
-import { ModalComponent } from '../modal/modal.component';
 import { PwaInstallService } from '../services/pwa-install.service';
 import { NetworkService } from '../services/network.service';
 
@@ -15,29 +13,18 @@ export class AccueilComponent implements OnInit {
   query: string = '';
   results: any[] = [];
   isOnline: boolean = true;
+  isMenuOpen: boolean = false;
 
   constructor(
-    public dialog: MatDialog,
     private searchService: SearchService,
     private router: Router,
     public pwaInstallService: PwaInstallService,
-    private networkService: NetworkService // Import NetworkService here
+    private networkService: NetworkService
   ) {}
 
   ngOnInit(): void {
-    // this.openModal('');
-    // console.log('AccueilComponent initialized');
-
-    // this.networkService.isOnline$.subscribe((online) => {
-    //   this.isOnline = online;
-    // });
-  }
-
-  openModal(imageUrl: string): void {
-    const dialogRef = this.dialog.open(ModalComponent, {});
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
+    this.networkService.isOnline$.subscribe((online) => {
+      this.isOnline = online;
     });
   }
 
@@ -65,5 +52,13 @@ export class AccueilComponent implements OnInit {
 
   rejectPwa(): void {
     this.pwaInstallService.rejectInstall();
+  }
+
+  openVideoWindow(videoUrl: string): void {
+    const width = 560;
+    const height = 315;
+    const left = (window.screen.width / 2) - (width / 2);
+    const top = (window.screen.height / 2) - (height / 2);
+    window.open(videoUrl, '_blank', `width=${width},height=${height},top=${top},left=${left}`);
   }
 }

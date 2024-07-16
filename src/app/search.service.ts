@@ -14,7 +14,7 @@ export class SearchService {
       { section: 'section5', text: 'Fonction armes', page: 'tuto' },
       { section: 'section6', text: 'Rechargement', page: 'tuto' },
       { section: 'section7', text: 'Poudre noire', page: 'tuto' },
-      { section: 'section8', text: 'Entretien', page: 'tuto' },
+      { section: 'section8', text: 'Entretien, nettoyage', page: 'tuto' },
       { section: 'section9', text: 'Essais armes', page: 'tuto' },
       { section: 'section10', text: 'Arbalète', page: 'tuto' },
       { section: 'section11', text: 'SIA pour les tireurs', page: 'news' },
