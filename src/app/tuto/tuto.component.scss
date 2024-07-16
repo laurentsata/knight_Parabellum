@@ -1,149 +1,177 @@
-h1, p{
-    display: flex;
-    justify-content: center;
-  }
 
-  h2 {
-    text-align: center;
-    width: 100%; /* Pour centrer le titre sur toute la largeur */
-  }
+/* Styles pour les images de vidéos */
+.video-thumbnail {
+  width: 560px;
+  height: 315px;
+  object-fit: cover; /* Cette propriété permet de remplir le conteneur sans bandes noires */
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Bordures arrondies */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .menu-container {
-    position: relative;
-    background-color: dimgray;
-  }
-  
-  .menu-select {
-    width: 135px;
-    font-size: 0.8rem;
-    background-color: #5C5C5C;
-  }
-.mat-toolbar-row{
-  background-color: rgba(255, 255, 255, 1);
-  z-index: 1000; /* Pour s'assurer que la barre selection est au-dessus du contenu */
-  display: flex; 
+/* Styles pour la modale */
+.modal {
+  display: none; /* Caché par défaut */
+  position: fixed;
+  z-index: 1; /* Au-dessus de tout */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal iframe {
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+
+.modal .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Autres styles existants */
+h1, p {
+  display: flex;
   justify-content: center;
 }
-mat-option{
+
+h2 {
+  text-align: center;
+  width: 100%; /* Pour centrer le titre sur toute la largeur */
+}
+
+.menu-container {
+  position: relative;
+  background-color: dimgray;
+}
+
+.menu-select {
+  width: 135px;
+  font-size: 0.8rem;
+  background-color: #5C5C5C;
+}
+
+.mat-toolbar-row {
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1000; /* Pour s'assurer que la barre selection est au-dessus du contenu */
+  display: flex;
+  justify-content: center;
+}
+
+mat-option {
   font-size: 0.7rem;
   text-align: center;
 }
-  .header {
-    position: fixed;
-    top: 30vh;
-    left: 45px;
-    width: 5%;
-    z-index: 1000; /* Pour s'assurer que la barre selection est au-dessus du contenu */
-    display: flex;
-    justify-content: center; /* Centrer les éléments horizontalement */
-  }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .frame {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Pour espacer les images horizontalement */
-  }
-  
-  .frame iframe {
-    max-width: 100%; /* Pour s'assurer que les images ne dépassent pas la largeur de l'écran */
-    margin: 10px; /* Espacement entre les images */
-  }
-  iframe{
-    width: 55vh;
-    height: 17%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  footer{
-    position: static;
-    padding-top: 235%;
-    bottom: 0;
-    width: 100%;
-   }
-  footer img{
-  
-    position: sticky;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-  }
-  
-  
-  @media screen and (max-width: 1920px) {
-    footer {
-      padding-top: 100%;
-    }
-    .header {
-      left: 2.4rem;
-    }
-    iframe {
-      height: 6%;
-  }
+.header {
+  position: fixed;
+  top: 30vh;
+  left: 45px;
+  width: 5%;
+  z-index: 1000; /* Pour s'assurer que la barre selection est au-dessus du contenu */
+  display: flex;
+  justify-content: center; /* Centrer les éléments horizontalement */
 }
-  
-  @media screen and (max-width: 1280px) {
-    footer {
-      padding-top: 4.55%;
-    }
+
+.frame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Pour espacer les images horizontalement */
+}
+
+footer {
+  position: static;
+  padding-top: 10%;
+  bottom: 0;
+  width: 100%;
+}
+
+footer img {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  footer {
+    padding-top: 10%;
     
   }
-  
-  @media screen and (max-width: 886px) {
-    footer {
-      padding-top: 24.55%;
-    }
+  .header {
+    left: 2.4rem;
   }
-  
-  @media screen and (max-width: 836px) {
-    footer {
-      padding-top: 35.55%;
-    }
+  iframe {
+    height: 6%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  footer {
+    padding-top: 4.55%;
+  }
+}
+
+
+@media screen and (max-width: 836px) {
     .header {
       top: 8.5rem;
       left: 4rem;
     }
-  }
-  
-  @media screen and (max-width: 800px) {
-    footer {
-      padding-top: 45.55%;
-    }
-    .container{
+}
+
+@media screen and (max-width: 800px) {
+    .container {
       border: inherit;
       border-radius: inherit;
       box-shadow: inherit;
     }
-    .header{
+    .header {
       top: 8.2rem;
       left: 4rem;
     }
-  }
-  
-  @media screen and (max-width: 799px) {
-    footer {
-      display: none;
-    }
-  }
-    @media  screen and (max-width: 600px){
-      .header{
-        top: 8rem;
-        left: 20rem;
-      }
-      iframe{
-        height: 2.3%;
-      }
-  }
+}
 
+@media screen and (max-width: 799px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    top: 8rem;
+    left: 20rem;
+  }
+  .video-thumbnail {
+    height: 30vh;
+  }
+}
 
 @media screen and (max-width: 570px) {
- .header {
+  .header {
     top: 7rem;
     left: 17rem;
   }

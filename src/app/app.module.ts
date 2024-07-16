@@ -65,7 +65,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
         BrowserAnimationsModule,
         MatToolbarModule,
         MatSelectModule,
-
         FormsModule,
         ReactiveFormsModule,
         ServiceWorkerModule.register('ngsw-worker.js', {

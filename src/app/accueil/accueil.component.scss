@@ -94,6 +94,16 @@ li{
   // background-size: cover;
 }
 
+.video-thumbnail {
+  width: 560px;
+  height: 315px;
+  object-fit: cover; /* Cette propriété permet de remplir le conteneur sans bandes noires */
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Bordures arrondies */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .frame iframe {
   max-width: 100%; /* Pour s'assurer que les images ne dépassent pas la largeur de l'écran */
@@ -179,6 +189,7 @@ footer img {
   z-index: -1;
   width: 100%;
 }
+
 @media screen and (max-width: 619px) {
 
   .image {
@@ -261,5 +272,12 @@ footer img {
 @media screen and (max-width: 799px) {
   footer {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video-thumbnail {
+    width: 280px;
+    height: 157px;
   }
 }

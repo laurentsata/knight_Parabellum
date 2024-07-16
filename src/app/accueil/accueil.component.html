@@ -41,14 +41,13 @@
     </div>
   </div>
   <div class="frame">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/e77SohoxgoY?si=GMdCHHeBEg6nadPe"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <img
+    class="video-thumbnail"
+    src="https://img.youtube.com/vi/e77SohoxgoY/0.jpg"
+    data-video="https://www.youtube.com/embed/e77SohoxgoY?si=GMdCHHeBEg6nadPe"
+    alt="Vidéo YouTube sur le tir à 25 mètres"
+    (click)="openVideoWindow('https://www.youtube.com/embed/e77SohoxgoY?si=GMdCHHeBEg6nadPe')"
+  />
   </div>
 
   <div class="container">
@@ -122,14 +121,13 @@
   </div>
 
   <div class="frame">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/SIBnactZ4-A?si=XXKtFdhBrfX7Zluf"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <img
+    class="video-thumbnail"
+    src="https://img.youtube.com/vi/SIBnactZ4-A/0.jpg"
+    data-video="https://www.youtube.com/embed/SIBnactZ4-A?si=XXKtFdhBrfX7Zluf"
+    alt="Vidéo YouTube sur le tir à 10 mètres"
+    (click)="openVideoWindow('https://www.youtube.com/embed/SIBnactZ4-A?si=XXKtFdhBrfX7Zluf')"
+  />
   </div>
 
   <div class="container">
@@ -217,14 +215,13 @@
   </div>
 
   <div class="frame">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/I6ETYpceIKk?si=fEzy__DCGqzLNxeg"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <img
+    class="video-thumbnail"
+    src="https://img.youtube.com/vi/I6ETYpceIKk/0.jpg"
+    data-video="https://www.youtube.com/embed/I6ETYpceIKk?si=fEzy__DCGqzLNxeg"
+    alt="Vidéo YouTube sur le tir à poudre noire"
+    (click)="openVideoWindow('https://www.youtube.com/embed/I6ETYpceIKk?si=fEzy__DCGqzLNxeg')"
+  />
   </div>
 
   <div class="container">
@@ -312,34 +309,39 @@
   </div>
 
   <div class="frame">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/xsYgxtmzXn4?si=JxS1Tp_c7XSaero2"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <img
+      class="video-thumbnail"
+      src="https://img.youtube.com/vi/xsYgxtmzXn4/0.jpg"
+      data-video="https://www.youtube.com/embed/xsYgxtmzXn4?si=JxS1Tp_c7XSaero2"
+      alt="Vidéo YouTube sur le tir à armes règlementaires"
+      (click)="openVideoWindow('https://www.youtube.com/embed/xsYgxtmzXn4?si=JxS1Tp_c7XSaero2')"
+    />
   </div>
 
   <div class="frame">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/-V2LfyiDaJY?si=t9ZnXpZWzdeNPEXW"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
+    <img
+    class="video-thumbnail"
+    src="https://img.youtube.com/vi/-V2LfyiDaJY/0.jpg"
+    data-video="https://www.youtube.com/embed/-V2LfyiDaJY?si=t9ZnXpZWzdeNPEXW"
+    alt="Vidéo YouTube sur comment obtenir une licence de tir"
+    (click)="openVideoWindow('https://www.youtube.com/embed/-V2LfyiDaJY?si=t9ZnXpZWzdeNPEXW')"
+  />
   </div>
 
-  <div *ngIf="pwaInstallService.canPrompt()" class="install-banner">
+  <!-- <div *ngIf="pwaInstallService.canPrompt()" class="install-banner">
     <p>Voulez-vous installer cette application ?</p>
     <div class="button-group">
     <button class="install-button" (click)="pwaInstallService.promptInstall()">Installer</button>
     <button class="reject-button" (click)="rejectPwa()">Refuser</button>
     </div>
-  </div>
+  </div> -->
+
+  <!-- Modale pour afficher la vidéo
+  <div id="video-modal" class="modal">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <iframe id="video-frame" allowfullscreen title="Lecteur vidéo youtube"></iframe>
+  </div> -->
+
 </div>
 <footer>
   <a href="https://www.denicher.com">référencement</a>
