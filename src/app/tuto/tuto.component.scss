@@ -64,20 +64,22 @@ h2 {
 
 .menu-container {
   position: relative;
-  background-color: dimgray;
+  height: 20px;
+  left: 5px;
 }
 
 .menu-select {
-  width: 135px;
+  width: 150px;
   font-size: 0.8rem;
   background-color: #5C5C5C;
+  z-index: 1;
 }
 
 .mat-toolbar-row {
-  background-color: rgba(255, 255, 255, 1);
-  z-index: 1000; /* Pour s'assurer que la barre selection est au-dessus du contenu */
+  background-color: #fff;
   display: flex;
   justify-content: center;
+  
 }
 
 mat-option {
@@ -170,9 +172,41 @@ footer img {
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 430px) {
   .header {
     top: 7rem;
     left: 17rem;
+  }
+  .menu-container {
+    top: 0.7rem;
+    left: 3rem;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .menu-container {
+    top: -0.2rem;
+    left: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .menu-container {
+    top: -0.5rem;
+    left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .menu-container {
+    top: 0;
+    left: -0.3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .menu-container {
+    top: -2.7rem;
+    left: -2.3rem;
   }
 }
