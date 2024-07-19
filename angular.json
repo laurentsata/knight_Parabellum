@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "knight_parabellum:build:production"
+              "buildTarget": "knight_parabellum:build:production"
             },
             "development": {
-              "browserTarget": "knight_parabellum:build:development"
+              "buildTarget": "knight_parabellum:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "knight_parabellum:build"
+            "buildTarget": "knight_parabellum:build"
           }
         },
         "test": {
